@@ -1,0 +1,1262 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Career@Germany Gesundheitsnachrichten & Einblicke</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CY7FEDRNVJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CY7FEDRNVJ');
+    </script>
+
+    
+    <meta name="description"
+        content="Bleiben Sie auf dem Laufenden mit den neuesten Nachrichten, Einblicken und Tipps zu Gesundheitskarrieren in Deutschland. Expertenberatung zu Pflege, Medizinstudium und Einwanderung.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+
+    /* Logo Image Styles - Add this to your existing CSS */
+/*
+
+.logo-img {
+width: 45px;
+height: 45px;
+object-fit: contain;
+transition: transform 0.3s ease;
+border-radius: 8px; 
+}
+
+.logo:hover .logo-img {
+transform: scale(1.1);
+}
+
+*/
+
+.logo-img { 
+    height: 8mm; 
+    transform: scale(0.9);
+    transform-origin: left center;
+    margin-left: -1mm; 
+}
+.logo:hover .logo-img {
+transform: scale(1);
+}
+
+/* Update existing .logo styles */
+.logo {
+font-size: 1.8rem;
+font-weight: bold;
+color: #ff4444;
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 0rem; /* Reduced gap from 0.5rem to 0.3rem */
+}
+
+/* Fix navigation height - Add this to prevent nav from growing */
+.nav-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 2rem;
+min-height: 80px; /* Fixed height */
+max-height: 80px; /* Prevent growth */
+}
+
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff4444;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #ff4444;
+            background: rgba(255, 68, 68, 0.1);
+        }
+
+        .call-btn {
+            background: #25D366;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .call-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ff4444;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 150px 0 80px;
+            text-align: center;
+        }
+
+        .page-header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: #ff4444;
+        }
+
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Featured Article Section */
+        .featured-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .featured-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .featured-article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            background: #f8fafc;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .featured-content h2 {
+            font-size: 2.2rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .featured-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .meta-item i {
+            color: #ff4444;
+        }
+
+        .featured-content p {
+            color: #64748b;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .read-more-btn {
+            background: #ff4444;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .read-more-btn:hover {
+            background: #e63946;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 68, 68, 0.3);
+        }
+
+        .featured-image img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Blog Categories */
+        .categories-section {
+            padding: 40px 0;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .categories-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .category-filters {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .category-btn {
+            background: white;
+            color: #64748b;
+            border: 2px solid #e2e8f0;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .category-btn.active,
+        .category-btn:hover {
+            background: #ff4444;
+            color: white;
+            border-color: #ff4444;
+            transform: translateY(-2px);
+        }
+
+        /* Blog Articles Section */
+        .articles-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .articles-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .article-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .article-image {
+            position: relative;
+            overflow: hidden;
+            height: 220px;
+        }
+
+        .article-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .article-card:hover .article-image img {
+            transform: scale(1.1);
+        }
+
+        .article-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(255, 68, 68, 0.9);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .article-content {
+            padding: 2rem;
+        }
+
+        .article-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .article-content h3 {
+            font-size: 1.3rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            line-height: 1.4;
+        }
+
+        .article-content p {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-btn {
+            color: #ff4444;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .article-btn:hover {
+            gap: 1rem;
+        }
+
+        /* Newsletter Section */
+        .newsletter-section {
+            padding: 80px 0;
+            background: #1e293b;
+            color: white;
+            text-align: center;
+        }
+
+        .newsletter-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .newsletter-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .newsletter-content p {
+            color: #cbd5e1;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 1rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 1rem;
+            border: none;
+            border-radius: 50px;
+            background: white;
+            color: #333;
+            font-size: 1rem;
+        }
+
+        .newsletter-form input:focus {
+            outline: 2px solid #ff4444;
+        }
+
+        .newsletter-form button {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .newsletter-form button:hover {
+            background: #e63946;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .footer-section h3 {
+            color: #ff4444;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p {
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+            display: block;
+            padding: 0.3rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff4444;
+            padding-left: 10px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #334155;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: #ff4444;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: #ff4444;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 8px 35px rgba(37, 211, 102, 0.5), 0 0 0 10px rgba(37, 211, 102, 0.1);
+            }
+
+            100% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: white;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                transition: all 0.3s ease;
+                padding-top: 2rem;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu.show {
+                left: 0;
+            }
+
+            .call-btn {
+                display: none;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .featured-article {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 2rem;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .category-filters {
+                gap: 0.5rem;
+            }
+
+            .category-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .footer-bottom {
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Filter Animation */
+        .filter-animation {
+            transition: all 0.3s ease;
+        }
+
+        .filter-hide {
+            opacity: 0;
+            transform: scale(0.8);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <!-- <i class="fas fa-heartbeat"></i> Career@Germany -->
+                <!-- <img src="Images/Logo1/erasebg-transformed (7).png" alt="Career@Germany Logo" class="logo-img"> Career@Germany -->
+                <img src="Images/Logo1/erasebg-transformed (7).png" alt="Career@Germany Logo" class="logo-img">
+                <!-- <span style="color: black;">Pflege</span> Career -->
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="services.html">Dienstleistungen</a></li>
+                <li><a href="programs.html">Programme</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="tel:+9179077282464" class="call-btn">
+                <i class="fas fa-phone"></i> Anrufen
+            </a>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1 class="page-title">Neueste <span class="highlight">Nachrichten & Einblicke</span></h1>
+            <p class="page-subtitle">Bleiben Sie auf dem Laufenden mit den neuesten Gesundheitskarriere-Möglichkeiten, deutschen Einwanderungsnachrichten, Expertentipps und Erfolgsgeschichten aus unserer Gemeinschaft.</p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-section">
+        <div class="featured-container">
+            <article class="featured-article">
+                <div class="featured-content">
+                    <h2>Vollständiger Leitfaden zu Pflegekarriere-Möglichkeiten in Deutschland 2025</h2>
+                    <div class="featured-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>15. Dezember 2024</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i>
+                            <span>Sarah Müller</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>8 Min. Lesezeit</span>
+                        </div>
+                    </div>
+                    <p>Entdecken Sie die neuesten Pflegejob-Möglichkeiten, Gehaltserwartungen und Karrierewachstumsperspektiven in Deutschlands Gesundheitssystem. Erfahren Sie mehr über Qualifikationsanforderungen, Bewerbungsverfahren und Insider-Tipps von Branchenexperten für eine erfolgreiche Pflegekarriere in Deutschland.
+                    </p>
+                    <a href="Blogs/nursing-career-guide-2025.html" class="read-more-btn">Vollständigen Artikel lesen <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=500&h=300&fit=crop" alt="Pflegemöglichkeiten in Deutschland">
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories-section">
+        <div class="categories-container">
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">Alle Artikel</button>
+                <button class="category-btn" data-category="career">Karrieremöglichkeiten</button>
+                <button class="category-btn" data-category="language">Sprachtraining</button>
+                <button class="category-btn" data-category="education">Bildung</button>
+                <button class="category-btn" data-category="immigration">Einwanderung</button>
+                <button class="category-btn" data-category="success">Erfolgsgeschichten</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles -->
+    <section class="articles-section">
+        <div class="articles-container">
+            <h2 class="section-title">Aktuelle <span class="highlight">Artikel</span></h2>
+            <div class="articles-grid">
+                <!-- Article 1 -->
+                <article class="article-card filter-animation" data-category="language">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=220&fit=crop" alt="Deutsche Sprachanforderungen">
+                        <div class="article-category">🗣️ Sprachtraining</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>10. Dezember 2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>6 Min. Lesezeit</span>
+                            </div>
+                        </div>
+                        <h3>Deutsche Sprachanforderungen für Gesundheitsfachkräfte</h3>
+                        <p>Umfassender Leitfaden zu deutschen Sprachkenntnisanforderungen, Zertifizierungsstufen und Vorbereitungsstrategien für Gesundheitskarrieren in Deutschland. Tipps von Sprachexperten und Erfolgsgeschichten.</p>
+                        <a href="Blogs/german-language-requirements.html" class="article-btn">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="article-card filter-animation" data-category="education">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?w=400&h=220&fit=crop" alt="Medizinstudium in Deutschland">
+                        <div class="article-category">🎓 Bildung</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>5. Dezember 2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>10 Min. Lesezeit</span>
+                            </div>
+                        </div>
+                        <h3>Medizinstudium in Deutschland: Vollständiger Zulassungsleitfaden 2025</h3>
+                        <p>Umfassende Informationen über Medizinuniversitäts-Zulassungen, Zugangsvoraussetzungen, Bewerbungsfristen und Stipendienmöglichkeiten für internationale Studenten in Deutschland.
+                        </p>
+                        <a href="#" class="article-btn">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="article-card filter-animation" data-category="immigration">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&h=220&fit=crop" alt="Deutsches Visa-Verfahren">
+                        <div class="article-category">✈️ Einwanderung</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>28. November 2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>7 Min. Lesezeit</span>
+                            </div>
+                        </div>
+                        <h3>Deutsches Arbeitsvisum-Verfahren für Gesundheitsfachkräfte 2025</h3>
+                        <p>Schritt-für-Schritt-Anleitung zur Erlangung von Arbeitsvisa für Gesundheitsfachkräfte in Deutschland. Erforderliche Dokumente, Bearbeitungszeiten und Expertentipps für eine erfolgreiche Bewerbung.</p>
+                        <a href="#" class="article-btn">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 4 -->
+                <article class="article-card filter-animation" data-category="success">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=220&fit=crop" alt="Erfolgsgeschichte">
+                        <div class="article-category">🌟 Erfolgsgeschichten</div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>20. November 2024</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>5 Min. Lesezeit</span>
+                            </div>
+                        </div>
+                        <h3>Von Kerala nach Berlin: Eine Krankenschwester auf dem Weg zum Erfolg</h3>
+                        <p>Inspirierende Geschichte von Priya, die erfolgreich von der Krankenpflege in Indien zu einer blühenden Karriere im Charité-Krankenhaus Berlin gewechselt ist. Erfahren Sie mehr über ihre Herausforderungen und Erfolge.</p>
+                        <a href="#" class="article-btn">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Article 5 -->
+                <article class="article-card filter-animation" data-category="career">
+                    <div class="article-image">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=220&fit=crop" alt="Gesundheitsgehälter">
+                       <div class="article-category">💼 Karrieremöglichkeiten</div>
+                   </div>
+                   <div class="article-content">
+                       <div class="article-meta">
+                           <div class="meta-item">
+                               <i class="fas fa-calendar"></i>
+                               <span>15. November 2024</span>
+                           </div>
+                           <div class="meta-item">
+                               <i class="fas fa-clock"></i>
+                               <span>8 Min. Lesezeit</span>
+                           </div>
+                       </div>
+                       <h3>Gesundheitswesen Gehaltsleitfaden Deutschland 2025: Was Sie erwarten können</h3>
+                       <p>Umfassende Aufschlüsselung der Gesundheitsgehälter in Deutschland nach verschiedenen Fachrichtungen, Erfahrungsstufen und Regionen. Vergleichen Sie Möglichkeiten und planen Sie Ihr Karrierewachstum.</p>
+                       <a href="#" class="article-btn">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                   </div>
+               </article>
+
+               <!-- Article 6 -->
+               <article class="article-card filter-animation" data-category="education">
+                   <div class="article-image">
+                       <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=220&fit=crop" alt="Gesundheitsausbildung">
+                       <div class="article-category">🎓 Bildung</div>
+                   </div>
+                   <div class="article-content">
+                       <div class="article-meta">
+                           <div class="meta-item">
+                               <i class="fas fa-calendar"></i>
+                               <span>8. November 2024</span>
+                           </div>
+                           <div class="meta-item">
+                               <i class="fas fa-clock"></i>
+                               <span>6 Min. Lesezeit</span>
+                           </div>
+                       </div>
+                       <h3>Top Gesundheitsausbildungsprogramme in Deutschland für internationale Studenten</h3>
+                       <p>Erkunden Sie die besten Gesundheitsausbildungsprogramme, Zertifizierungskurse und beruflichen Entwicklungsmöglichkeiten für internationale Studenten in Deutschland.</p>
+                       <a href="#" class="article-btn">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                   </div>
+               </article>
+
+
+
+               <!-- Article 7 - Nursing Ausbildung Germany -->
+               <article class="article-card filter-animation" data-category="career">
+                   <div class="article-image">
+                       <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=220&fit=crop" alt="Pflege Ausbildung in Deutschland">
+                       <div class="article-category">Karrieremöglichkeiten</div>
+              
+                   </div>
+                   <div class="article-content">
+                       <div class="article-meta">
+                           <div class="meta-item">
+                               <i class="fas fa-calendar"></i>
+                               <span>20. Januar 2025</span>
+                           </div>
+                           <div class="meta-item">
+                               <i class="fas fa-clock"></i>
+                               <span>7 Min. Lesezeit</span>
+                           </div>
+                       </div>
+                       <h3>Eine Pflegekarriere in Deutschland mit Career@Germany verfolgen</h3>
+                       <p>Entdecken Sie, wie Deutschlands Pflege-Ausbildungsprogramm hervorragende Möglichkeiten für internationale Kandidaten bietet. Erfahren Sie mehr über unsere einzigartigen Vorteile, kostenlose Unterstützung und unbegrenzte Vorstellungsgesprächsmöglichkeiten, die Career@Germany von typischen Agenturen unterscheiden.</p>
+                       <a href="Blogs/nursing-ausbildung-germany.html" class="article-btn">Mehr lesen <i class="fas fa-arrow-right"></i></a>
+                   </div>
+               </article>
+
+
+
+               
+           </div>
+       </div>
+   </section>
+
+   <!-- Newsletter Section -->
+   <section class="newsletter-section">
+       <div class="newsletter-container">
+           <div class="newsletter-content">
+               <h2>Bleiben Sie <span class="highlight">informiert</span></h2>
+               <p>Abonnieren Sie unseren Newsletter und erhalten Sie die neuesten Updates zu deutschen Gesundheitsmöglichkeiten, Expertentipps und exklusive Einblicke direkt in Ihrem Postfach.</p>
+               <div class="newsletter-form">
+                   <input type="email" placeholder="Geben Sie Ihre E-Mail-Adresse ein..." required>
+                   <button type="submit">Abonnieren</button>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+       <div class="footer-container">
+           <div class="footer-section">
+               <h3>Über Career@Germany</h3>
+               <p>Career@Germany ist eine führende Gesundheitsberatung, die sich auf deutsche Karrieremöglichkeiten spezialisiert hat. Wir bieten umfassende Unterstützung für Pflegefachkräfte, Medizinstudenten und Gesundheitsmitarbeiter, die erfolgreiche Karrieren in Deutschlands erstklassigem Gesundheitssystem aufbauen möchten.</p>
+               <div class="footer-social">
+                   <a href="https://www.facebook.com/profile.php?id=61577329532504"
+                       class="facebook"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.linkedin.com/in/pflegecareer/"
+                       class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="https://www.instagram.com/pflegecareer?igsh=MXcwc295bGM0bnFpNA=="
+                       class="instagram"><i class="fab fa-instagram"></i></a>
+               </div>
+           </div>
+           <div class="footer-section">
+               <h3>📍 Kontaktinformationen</h3>
+               <p><strong>Career@Germany</strong></p>
+               <p><i class="fas fa-map-marker-alt" style="color: #ff4444;"></i> Suite Nr.: 693 2. Stock, Kc Arcade,<br>
+               PO, CSEZ, Kakkanad, Kochi, Kerala, <br> Indien - 682037</p>
+               <p><i class="fas fa-phone" style="color: #25D366;"></i> +91 9074847617 (Indien)</p>
+               <p><i class="fas fa-phone" style="color: #25D366;"></i> +49 176 24572472 (Deutschland)</p>
+               <p><i class="fas fa-envelope" style="color: #3498db;"></i> info@pflegecareer.com</p>
+           </div>
+           <div class="footer-section">
+               <h3>🔗 Schnelllinks</h3>
+               <a href="index.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Startseite</a>
+               <a href="about.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Über uns</a>
+               <a href="services.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Unsere Dienstleistungen</a>
+               <a href="programs.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Gesundheitsprogramme</a>
+               <a href="blog.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Aktuelle Nachrichten</a>
+               <a href="contact.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Kontakt</a>
+           </div>
+           <div class="footer-section">
+               <h3>📚 Beliebte Themen</h3>
+               <a href="#">Pflegekarrieren in Deutschland</a>
+               <a href="#">Deutschkurse</a>
+               <a href="#">Medizinstudium Zulassung</a>
+               <a href="#">Gesundheitswesen Visa-Verfahren</a>
+               <a href="#">Erfolgsgeschichten</a>
+               <a href="#">Gehaltserwartungen</a>
+
+           </div>
+       </div>
+       <div class="footer-bottom">
+           <p>© 2025 Career@Germany. Alle Rechte vorbehalten. | Gesundheitskarrieren in Deutschland stärken</p>
+           <div style="display: flex; gap: 2rem;">
+               <a href="#">Datenschutzerklärung</a>
+               <a href="#">Nutzungsbedingungen</a>
+               <a href="#">Cookie-Richtlinie</a>
+           </div>
+       </div>
+   </footer>
+
+   <!-- WhatsApp Floating Button -->
+   <a href="https://wa.me/91907484761?text=Hallo!%20Ich%20möchte%20mehr%20über%20Gesundheitskarrieren%20in%20Deutschland%20erfahren.%20Bitte%20geben%20Sie%20mir%20Informationen%20über%20Ihre%20Dienstleistungen."
+       class="whatsapp-float" target="_blank" aria-label="Chat auf WhatsApp">
+       <i class="fab fa-whatsapp"></i>
+   </a>
+
+   <script>
+       // Enhanced mobile menu toggle
+       const hamburger = document.querySelector('.hamburger');
+       const navMenu = document.querySelector('.nav-menu');
+
+       hamburger.addEventListener('click', () => {
+           navMenu.classList.toggle('show');
+           hamburger.innerHTML = navMenu.classList.contains('show') ? 
+               '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+       });
+
+       // Close mobile menu when clicking on a link
+       document.querySelectorAll('.nav-menu a').forEach(link => {
+           link.addEventListener('click', () => {
+               navMenu.classList.remove('show');
+               hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+           });
+       });
+
+       // Enhanced header background on scroll
+       window.addEventListener('scroll', () => {
+           const header = document.querySelector('.header');
+           if (window.scrollY > 100) {
+               header.style.background = 'rgba(255, 255, 255, 0.98)';
+               header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.12)';
+           } else {
+               header.style.background = 'rgba(255, 255, 255, 0.98)';
+               header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.08)';
+           }
+       });
+
+       // Enhanced category filtering
+       const categoryBtns = document.querySelectorAll('.category-btn');
+       const articleCards = document.querySelectorAll('.article-card');
+
+       categoryBtns.forEach(btn => {
+           btn.addEventListener('click', () => {
+               // Remove active class from all buttons
+               categoryBtns.forEach(b => b.classList.remove('active'));
+               // Add active class to clicked button
+               btn.classList.add('active');
+
+               const categoryValue = btn.getAttribute('data-category');
+               
+               // Add fade out effect
+               articleCards.forEach(card => {
+                   card.style.opacity = '0';
+                   card.style.transform = 'translateY(20px)';
+               });
+
+               setTimeout(() => {
+                   articleCards.forEach(card => {
+                       if (categoryValue === 'all') {
+                           card.style.display = 'block';
+                           setTimeout(() => {
+                               card.style.opacity = '1';
+                               card.style.transform = 'translateY(0)';
+                           }, 100);
+                       } else {
+                           const cardCategory = card.getAttribute('data-category');
+                           if (cardCategory === categoryValue) {
+                               card.style.display = 'block';
+                               setTimeout(() => {
+                                   card.style.opacity = '1';
+                                   card.style.transform = 'translateY(0)';
+                               }, 100);
+                           } else {
+                               card.style.display = 'none';
+                           }
+                       }
+                   });
+               }, 200);
+           });
+       });
+
+       // Enhanced newsletter form submission
+       const newsletterForm = document.querySelector('.newsletter-form');
+       newsletterForm.addEventListener('submit', (e) => {
+           e.preventDefault();
+           const email = e.target.querySelector('input').value;
+           if (email && email.includes('@')) {
+               const button = e.target.querySelector('button');
+               const originalText = button.textContent;
+               button.textContent = 'Abonniert!';
+               button.style.background = '#2ecc71';
+               
+               setTimeout(() => {
+                   button.textContent = originalText;
+                   button.style.background = '#ff4444';
+                   e.target.querySelector('input').value = '';
+               }, 2000);
+           } else {
+               alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+           }
+       });
+
+       // Enhanced animation on scroll
+       const observerOptions = {
+           threshold: 0.1,
+           rootMargin: '0px 0px -100px 0px'
+       };
+
+       const observer = new IntersectionObserver((entries) => {
+           entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                   entry.target.classList.add('fade-in');
+               }
+           });
+       }, observerOptions);
+
+       // Observe all cards and sections
+       document.querySelectorAll('.article-card, .featured-article').forEach(el => {
+           observer.observe(el);
+       });
+
+       // Enhanced button click effects
+       document.querySelectorAll('.read-more-btn, .article-btn, .category-btn').forEach(btn => {
+           btn.addEventListener('click', function(e) {
+               // Create ripple effect
+               const ripple = document.createElement('span');
+               const rect = this.getBoundingClientRect();
+               const size = Math.max(rect.width, rect.height);
+               const x = e.clientX - rect.left - size / 2;
+               const y = e.clientY - rect.top - size / 2;
+               
+               ripple.style.width = ripple.style.height = size + 'px';
+               ripple.style.left = x + 'px';
+               ripple.style.top = y + 'px';
+               ripple.style.position = 'absolute';
+               ripple.style.borderRadius = '50%';
+               ripple.style.background = 'rgba(255, 255, 255, 0.6)';
+               ripple.style.transform = 'scale(0)';
+               ripple.style.animation = 'ripple 0.6s linear';
+               ripple.style.pointerEvents = 'none';
+               
+               this.style.position = 'relative';
+               this.style.overflow = 'hidden';
+               this.appendChild(ripple);
+               
+               setTimeout(() => {
+                   ripple.remove();
+               }, 600);
+               
+               // Scale effect
+               this.style.transform = 'scale(0.98)';
+               setTimeout(() => {
+                   this.style.transform = '';
+               }, 150);
+           });
+       });
+
+       // Add ripple animation CSS
+       const style = document.createElement('style');
+       style.textContent = `
+           @keyframes ripple {
+               to {
+                   transform: scale(4);
+                   opacity: 0;
+               }
+           }
+       `;
+       document.head.appendChild(style);
+
+       // Auto-hide mobile menu on resize
+       window.addEventListener('resize', () => {
+           if (window.innerWidth > 768) {
+               navMenu.classList.remove('show');
+               hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+           }
+       });
+
+       // Enhanced WhatsApp button interaction
+       const whatsappBtn = document.querySelector('.whatsapp-float');
+       whatsappBtn.addEventListener('mouseenter', () => {
+           whatsappBtn.style.transform = 'scale(1.1) rotate(10deg)';
+       });
+       
+       whatsappBtn.addEventListener('mouseleave', () => {
+           whatsappBtn.style.transform = 'scale(1) rotate(0deg)';
+       });
+
+       // Enhanced loading animation
+       window.addEventListener('load', () => {
+           document.body.style.opacity = '0';
+           document.body.style.transition = 'opacity 0.8s ease-in';
+           setTimeout(() => {
+               document.body.style.opacity = '1';
+           }, 100);
+       });
+
+       // Article card hover effects
+       document.querySelectorAll('.article-card').forEach(card => {
+           card.addEventListener('mouseenter', function() {
+               this.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+           });
+           
+           card.addEventListener('mouseleave', function() {
+               this.style.transition = 'all 0.4s ease';
+           });
+       });
+
+       // Reading time calculator (optional enhancement)
+       function calculateReadingTime(text) {
+           const wordsPerMinute = 200;
+           const words = text.split(' ').length;
+           const readingTime = Math.ceil(words / wordsPerMinute);
+           return readingTime;
+       }
+
+       console.log('🎉 Blog-Seite erfolgreich geladen!');
+   </script>
+</body>
+
+</html>

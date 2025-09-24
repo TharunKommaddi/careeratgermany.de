@@ -1,0 +1,1443 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - Beste deutsche Beratung in Kerala</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CY7FEDRNVJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CY7FEDRNVJ');
+    </script>
+<!-- Add this line after your Google Analytics script -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+    // Initialize EmailJS with your public key
+    (function(){
+        emailjs.init("NYKqAOqEeoEy8j2F1"); // Your actual public key
+    })();
+
+    // Function to send email
+    function sendEmail() {
+        // Clear any previous error messages
+        clearValidationMessages();
+
+        // Collect form data
+        var params = {
+            firstName: document.getElementById("firstName").value,
+            lastName: document.getElementById("lastName").value,
+            email: document.getElementById("email").value,
+            phone: document.getElementById("phone").value,
+            profession: document.getElementById("profession").value,
+            experience: document.getElementById("experience").value,
+            service: document.getElementById("service").value,
+            message: document.getElementById("message").value,
+        };
+
+        // Basic validation
+        if (!params.firstName.trim()) {
+            showError("firstName", "Bitte geben Sie Ihren Vornamen ein");
+            return;
+        }
+        if (!params.lastName.trim()) {
+            showError("lastName", "Bitte geben Sie Ihren Nachnamen ein");
+            return;
+        }
+        if (!validateEmail(params.email)) {
+            showError("email", "Bitte geben Sie eine gültige E-Mail-Adresse ein");
+            return;
+        }
+        if (!params.phone.trim()) {
+            showError("phone", "Bitte geben Sie Ihre Telefonnummer ein");
+            return;
+        }
+        if (!params.message.trim()) {
+            showError("message", "Bitte geben Sie Ihre Nachricht ein");
+            return;
+        }
+
+        // Show loading state
+        const submitBtn = document.querySelector('.submit-btn');
+        const originalText = submitBtn.innerHTML;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sende...';
+        submitBtn.disabled = true;
+
+        // Send email using EmailJS
+        emailjs.send("service_bgjndgp", "template_zeu5vm3", params)
+            .then(res => {
+                console.log(res);
+                // Success state
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Nachricht gesendet!';
+                submitBtn.style.background = '#10b981';
+                
+                // Clear form
+                document.getElementById("contactForm").reset();
+                clearValidationMessages();
+                
+                // Show success message
+                alert("Vielen Dank für Ihre Nachricht! Wir werden uns innerhalb von 24 Stunden bei Ihnen melden.");
+                
+                // Reset button after delay
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.style.background = '';
+                    submitBtn.disabled = false;
+                }, 3000);
+            })
+            .catch(err => {
+                console.error("Nachricht konnte nicht gesendet werden:", err);
+                alert("Das Senden der Nachricht ist fehlgeschlagen. Bitte versuchen Sie es später erneut.");
+                
+                // Reset button
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+    }
+
+    // Helper functions
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+    }
+
+    function showError(fieldId, message) {
+        const field = document.getElementById(fieldId);
+        const formGroup = field.closest('.form-group');
+        const errorMessage = formGroup.querySelector('.error-message');
+        
+        formGroup.classList.add('error');
+        errorMessage.textContent = message;
+        errorMessage.classList.add('show');
+    }
+
+    function clearValidationMessages() {
+        const errorMessages = document.querySelectorAll('.error-message');
+        const formGroups = document.querySelectorAll('.form-group');
+        
+        errorMessages.forEach(function(element) {
+            element.classList.remove('show');
+            element.textContent = '';
+        });
+        
+        formGroups.forEach(function(element) {
+            element.classList.remove('error', 'success');
+        });
+    }
+</script>
+
+    
+    <meta name="description"
+        content="Kontaktieren Sie Career@Germany für Gesundheitskarriere-Beratung in Deutschland. Kostenlose Beratung, Expertenberatung und umfassende Unterstützung.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+
+    /* Logo Image Styles - Add this to your existing CSS */
+/*
+.logo-img {
+width: 45px;
+height: 45px;
+object-fit: contain;
+transition: transform 0.3s ease;
+border-radius: 8px; 
+}
+
+.logo:hover .logo-img {
+transform: scale(1.1);
+}
+*/
+
+
+.logo-img { 
+    height: 8mm; 
+    transform: scale(0.9);
+    transform-origin: left center;
+    margin-left: -1mm; 
+}
+.logo:hover .logo-img {
+transform: scale(1);
+}
+
+
+/* Update existing .logo styles */
+.logo {
+font-size: 1.8rem;
+font-weight: bold;
+color: #ff4444;
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 0rem; /* Reduced gap from 0.5rem to 0.3rem */
+}
+
+/* Fix navigation height - Add this to prevent nav from growing */
+.nav-container {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem 2rem;
+min-height: 80px; /* Fixed height */
+max-height: 80px; /* Prevent growth */
+}
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff4444;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #ff4444;
+            background: rgba(255, 68, 68, 0.1);
+        }
+
+        .call-btn {
+            background: #25D366;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .call-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ff4444;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 150px 0 80px;
+            text-align: center;
+        }
+
+        .page-header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: #ff4444;
+        }
+
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Form Section */
+        .contact-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .contact-form-wrapper {
+            background: #f8fafc;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .contact-form-wrapper h2 {
+            font-size: 2rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form-wrapper p {
+            color: #64748b;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #1e293b;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: white;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #ff4444;
+            box-shadow: 0 0 0 3px rgba(255, 68, 68, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .submit-btn {
+            background: #ff4444;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .submit-btn:hover {
+            background: #e63946;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 68, 68, 0.3);
+        }
+
+        .submit-btn:disabled {
+            background: #94a3b8;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Contact Info */
+        .contact-info {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .contact-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-item-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        .contact-item:nth-child(3) .contact-icon {
+            background: linear-gradient(135deg, #ff4444, #e63946);
+        }
+
+        .contact-item:nth-child(4) .contact-icon {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+
+        .contact-item:nth-child(5) .contact-icon {
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        }
+
+        .contact-item:nth-child(6) .contact-icon {
+            background: linear-gradient(135deg, #8b5cf6, #5b21b6);
+        }
+
+        .contact-item h3 {
+            color: #1e293b;
+            font-size: 1.2rem;
+        }
+
+        .contact-item .contact-details {
+            color: #64748b;
+            line-height: 1.6;
+        }
+
+        .contact-item .contact-details a {
+            color: #ff4444;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item .contact-details a:hover {
+            color: #e63946;
+        }
+
+        /* Business Hours */
+        .hours-section {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .hours-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 3rem;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .hours-card {
+            background: white;
+            padding: 2.5rem 2rem;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+
+        .hours-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .hours-card h3 {
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .hours-list {
+            list-style: none;
+            text-align: left;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f1f5f9;
+            color: #64748b;
+        }
+
+        .hours-list li:last-child {
+            border-bottom: none;
+        }
+
+        .hours-list li .day {
+            font-weight: 600;
+        }
+
+        .hours-list li .time {
+            color: #ff4444;
+            font-weight: 600;
+        }
+
+        /* Map Section */
+        .map-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .map-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .map-wrapper {
+            background: #f8fafc;
+            padding: 3rem;
+            border-radius: 20px;
+            margin-top: 3rem;
+        }
+
+        .map-placeholder {
+            background: #e2e8f0;
+            height: 400px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #64748b;
+            font-size: 1.2rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .faq-question {
+            padding: 1.5rem 2rem;
+            background: white;
+            border: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1e293b;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background: #f8fafc;
+        }
+
+        .faq-question i {
+            color: #ff4444;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            padding: 0 2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            color: #64748b;
+            line-height: 1.7;
+        }
+
+        .faq-answer.active {
+            padding: 0 2rem 2rem;
+            max-height: 200px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .footer-section h3 {
+            color: #ff4444;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p {
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+            display: block;
+            padding: 0.3rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff4444;
+            padding-left: 10px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #334155;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: #ff4444;
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: #ff4444;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 8px 35px rgba(37, 211, 102, 0.5), 0 0 0 10px rgba(37, 211, 102, 0.1);
+            }
+
+            100% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: white;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                transition: all 0.3s ease;
+                padding-top: 2rem;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu.show {
+                left: 0;
+            }
+
+            .call-btn {
+                display: none;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .contact-form-wrapper {
+                padding: 2rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .hours-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .map-wrapper {
+                padding: 2rem;
+            }
+
+            .footer-bottom {
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Form validation styles */
+        .form-group.error input,
+        .form-group.error select,
+        .form-group.error textarea {
+            border-color: #ef4444;
+            box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+        }
+
+        .form-group.success input,
+        .form-group.success select,
+        .form-group.success textarea {
+            border-color: #10b981;
+            box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+        }
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .error-message.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <!-- <i class="fas fa-heartbeat"></i> Career@Germany -->
+                <!-- <img src="Images/Logo1/erasebg-transformed (7).png" alt="Career@Germany Logo" class="logo-img"> Career@Germany -->
+                <img src="Images/Logo1/erasebg-transformed (7).png" alt="Career@Germany Logo" class="logo-img">
+                <!-- <span style="color: black;">Pflege</span> Career -->
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="services.html">Dienstleistungen</a></li>
+                <li><a href="programs.html">Programme</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html" class="active">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="tel:+9179077282464" class="call-btn">
+                <i class="fas fa-phone"></i> Anrufen
+            </a>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1 class="page-title">Kontaktieren Sie <span class="highlight">uns</span></h1>
+            <p class="page-subtitle">Bereit, Ihre Gesundheitskarriere in Deutschland zu beginnen? Kontaktieren Sie unsere Expertenberater für persönliche Beratung und umfassende Unterstützung.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <h2>Senden Sie uns eine Nachricht</h2>
+                <p>Füllen Sie das untenstehende Formular aus und unsere Expertenberater werden sich innerhalb von 24 Stunden mit personalisierter Beratung für Ihre Gesundheitskarriere in Deutschland bei Ihnen melden.</p>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Vorname *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <div class="error-message">Bitte geben Sie Ihren Vornamen ein</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nachname *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <div class="error-message">Bitte geben Sie Ihren Nachnamen ein</div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-Mail-Adresse *</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error-message">Bitte geben Sie eine gültige E-Mail-Adresse ein</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefonnummer *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                            <div class="error-message">Bitte geben Sie Ihre Telefonnummer ein</div>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="profession">Aktueller Beruf</label>
+                            <select id="profession" name="profession">
+                               <option value="">Wählen Sie Ihren Beruf</option>
+                               <option value="nurse">Krankenpfleger/in</option>
+                               <option value="doctor">Arzt/Ärztin</option>
+                               <option value="medical-student">Medizinstudent/in</option>
+                               <option value="physiotherapist">Physiotherapeut/in</option>
+                               <option value="healthcare-worker">Gesundheitsmitarbeiter/in</option>
+                               <option value="student">Student/in</option>
+                               <option value="other">Andere</option>
+                           </select>
+                       </div>
+                       <div class="form-group">
+                           <label for="experience">Jahre Berufserfahrung</label>
+                           <select id="experience" name="experience">
+                               <option value="">Erfahrung wählen</option>
+                               <option value="0-1">0-1 Jahre</option>
+                               <option value="2-5">2-5 Jahre</option>
+                               <option value="6-10">6-10 Jahre</option>
+                               <option value="10+">10+ Jahre</option>
+                           </select>
+                       </div>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="service">Interessierte Dienstleistung</label>
+                       <select id="service" name="service">
+                           <option value="">Wählen Sie eine Dienstleistung</option>
+                           <option value="fsj-bfd">FSJ / BFD</option>
+                           <option value="nursing-ausbildung">Pflege Ausbildung</option>
+                           <option value="au-pair">Au Pair</option>
+                           <option value="visa-appointment">Visa-Termin</option>
+                           <option value="other-ausbildung">Andere Ausbildung</option>
+                           <option value="masters">Master</option>
+                           <option value="nursing-job">Pflegejob</option>
+                           <option value="opportunity-card">Opportunity Card</option>
+                           <option value="anerkennung">Anerkennung</option>
+                           <option value="translation">Übersetzung</option>
+                           <option value="vfs-appointment">VFS-Termin</option>
+                           <option value="embassy-attestation">Botschaftsbeglaubigung</option>
+                           <option value="german-language">Deutsche Sprache</option>
+                           <option value="sim-card">SIM-Karte</option>
+                           <option value="airport-pickup">Flughafen-Abholung</option>
+                           <option value="german-train-ticket">Deutsche Bahntickets</option>
+                           <option value="flight-booking">Flugbuchung</option>
+                           <option value="german-health-insurance">Deutsche Krankenversicherung</option>
+                           <option value="pflege-career-insurance">Career@Germany Versicherung</option>
+                           <option value="accommodation-finding">Unterkunft finden</option>
+                           <option value="deutschland-ticket">Deutschland-Ticket</option>
+                           <option value="currency-exchange">Währungsumtausch</option>
+                       </select>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="message">Nachricht *</label>
+                       <textarea id="message" name="message" placeholder="Erzählen Sie uns von Ihren Zielen, Qualifikationen und wie wir Ihnen helfen können, Ihre Träume von einer Gesundheitskarriere in Deutschland zu verwirklichen..." required></textarea>
+                       <div class="error-message">Bitte geben Sie Ihre Nachricht ein</div>
+                   </div>
+
+                   <button type="button" class="submit-btn" onclick="sendEmail()">
+                       <i class="fas fa-paper-plane"></i>
+                       Nachricht senden
+                   </button>
+               </form>
+           </div>
+
+           <!-- Contact Information -->
+           <div class="contact-info">
+               <h2>Kontaktinformationen</h2>
+               <p>Nehmen Sie Kontakt mit unseren Experten-Gesundheitsberatern auf. Wir sind hier, um Ihnen bei jedem Schritt auf Ihrem Weg zu einer erfolgreichen Gesundheitskarriere in Deutschland zu helfen.</p>
+
+               <div class="contact-item">
+                   <div class="contact-item-header">
+                       <div class="contact-icon">
+                           <i class="fas fa-map-marker-alt"></i>
+                       </div>
+                       <h3>Unser Büro</h3>
+                   </div>
+                   <div class="contact-details">
+                       <strong>Career@Germany</strong><br>
+                       Suite Nr.: 693 2. Stock, Kc Arcade,<br>
+                       PO, CSEZ, Kakkanad, Kochi, Kerala, <br>
+                       Indien - 682037
+                   </div>
+               </div>
+
+               <div class="contact-item">
+                   <div class="contact-item-header">
+                       <div class="contact-icon">
+                           <i class="fas fa-phone"></i>
+                       </div>
+                       <h3>Telefonnummern</h3>
+                   </div>
+                   <div class="contact-details">
+                       <strong>Indien 1:</strong> <a href="tel:+919074847617">+91 9074847617</a><br>
+                       <strong>Indien 2:</strong> <a href="tel:+9179077282464">+91 79077282464</a><br>
+                       <small>24/7 verfügbar für dringende Anfragen</small>
+                   </div>
+               </div>
+
+               <div class="contact-item">
+                   <div class="contact-item-header">
+                       <div class="contact-icon">
+                           <i class="fas fa-envelope"></i>
+                       </div>
+                       <h3>E-Mail-Adresse</h3>
+                   </div>
+                   <div class="contact-details">
+                       <strong>Allgemeine Anfragen:</strong><br>
+                       <a href="mailto:info@pflegecareer.com">info@pflegecareer.com</a><br>
+                       <small>Wir antworten innerhalb von 24 Stunden</small>
+                   </div>
+               </div>
+
+               <div class="contact-item">
+                   <div class="contact-item-header">
+                       <div class="contact-icon">
+                           <i class="fab fa-whatsapp"></i>
+                       </div>
+                       <h3>WhatsApp Support</h3>
+                   </div>
+                   <div class="contact-details">
+                       <a href="https://wa.me/91907484761" target="_blank">+91 79077282464</a><br>
+                       <small>Sofortige Unterstützung und schnelle Beratungen</small>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Business Hours -->
+   <section class="hours-section">
+       <div class="hours-container">
+           <h2 class="section-title">Geschäfts<span class="highlight">zeiten</span></h2>
+           <div class="hours-grid">
+               <div class="hours-card">
+                   <h3>🇮🇳 Indien Büro</h3>
+                   <ul class="hours-list">
+                       <li><span class="day">Montag - Freitag</span><span class="time">9:00 - 17:00</span></li>
+                       <li><span class="day">Samstag</span><span class="time">9:00 - 17:00</span></li>
+                       <li><span class="day">Sonntag</span><span class="time">Geschlossen</span></li>
+                       <li><span class="day">Notfall-Support</span><span class="time">24/7</span></li>
+                   </ul>
+               </div>
+
+               <div class="hours-card">
+                   <h3>🇩🇪 Deutschland Büro</h3>
+                   <ul class="hours-list">
+                       <li><span class="day">Montag - Freitag</span><span class="time">9:00 - 17:00</span></li>
+                       <li><span class="day">Samstag</span><span class="time">9:00 - 17:00</span></li>
+                       <li><span class="day">Sonntag</span><span class="time">Geschlossen</span></li>
+                       <li><span class="day">WhatsApp Support</span><span class="time">24/7</span></li>
+                   </ul>
+               </div>
+
+               <div class="hours-card">
+                   <h3>🌐 Online Support</h3>
+                   <ul class="hours-list">
+                       <li><span class="day">Live Chat</span><span class="time">24/7</span></li>
+                       <li><span class="day">E-Mail Antwort</span><span class="time">Innerhalb 24 Std</span></li>
+                       <li><span class="day">Video-Beratungen</span><span class="time">Nach Termin</span></li>
+                       <li><span class="day">Notfall-Hotline</span><span class="time">24/7</span></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- FAQ Section -->
+   <section class="faq-section">
+       <div class="faq-container">
+           <h2 class="section-title">Häufig gestellte <span class="highlight">Fragen</span></h2>
+
+           <div class="faq-item">
+               <button class="faq-question">
+                   Wie lange dauert es, einen Pflegejob in Deutschland zu bekommen?
+                   <i class="fas fa-chevron-down"></i>
+               </button>
+               <div class="faq-answer">
+                   Der komplette Prozess dauert typischerweise 6-12 Monate, einschließlich Deutschkurse (3-6 Monate), Anerkennung der Qualifikationen (2-4 Monate) und Jobvermittlung (1-2 Monate). Unser optimierter Prozess und starke Branchenverbindungen helfen, diese Zeit zu verkürzen.
+               </div>
+           </div>
+
+           <div class="faq-item">
+               <button class="faq-question">
+                   Welches deutsche Sprachniveau ist für Gesundheitsjobs erforderlich?
+                   <i class="fas fa-chevron-down"></i>
+               </button>
+               <div class="faq-answer">
+                   Für Pflegepositionen benötigen Sie B2-Niveau Deutsche Sprachkenntnisse. Für Medizinstudium ist B2-C1 Niveau erforderlich. Wir bieten umfassende Sprachausbildung von A1 bis B2 Niveau mit Fokus auf medizinische Terminologie.
+               </div>
+           </div>
+
+           <div class="faq-item">
+               <button class="faq-question">
+                   Bieten Sie Visa-Hilfe und Unterstützung an?
+                   <i class="fas fa-chevron-down"></i>
+               </button>
+               <div class="faq-answer">
+                   Ja, wir bieten komplette Visa- und Einwanderungsunterstützung einschließlich Dokumentenvorbereitung, Antragsbetreuung, Botschaftsterminbuchung und kontinuierliche Beratung während des gesamten Visa-Prozesses.
+               </div>
+           </div>
+
+           <div class="faq-item">
+               <button class="faq-question">
+                   Was sind die Gehaltserwartungen für Gesundheitsfachkräfte in Deutschland?
+                   <i class="fas fa-chevron-down"></i>
+               </button>
+               <div class="faq-answer">
+                   Krankenpfleger verdienen typischerweise €2.800-3.500 pro Monat, Ärzte €4.500-7.000+, und Physiotherapeuten €2.500-3.200. Gehälter variieren je nach Erfahrung, Standort und Spezialisierung. Wir bieten detaillierte Gehaltsberatung während der Konsultation.
+               </div>
+           </div>
+
+           <div class="faq-item">
+               <button class="faq-question">
+                   Ist die erste Beratung wirklich kostenlos?
+                   <i class="fas fa-chevron-down"></i>
+               </button>
+               <div class="faq-answer">
+                   Ja, absolut! Wir bieten eine umfassende 30-45 Minuten kostenlose Beratung, um Ihre Qualifikationen zu bewerten, Ihre Ziele zu besprechen und einen personalisierten Fahrplan für Ihre deutsche Gesundheitskarriere zu erstellen. Keine versteckten Kosten.
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Map Section -->
+   <section class="map-section">
+       <div class="map-container">
+           <h2 class="section-title">Finden Sie <span class="highlight">uns</span></h2>
+           <div class="map-wrapper">
+               <div class="map-placeholder">
+                   <div style="text-align: center;">
+                       <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: #ff4444; margin-bottom: 1rem;"></i><br>
+                       📍 Suite Nr.: 693 2. Stock, Kc Arcade,<br>
+                       PO, CSEZ, Kakkanad, Kochi, Kerala, <br> Indien - 682037<br>
+                       <small style="color: #94a3b8;">Interaktive Kartenintegration verfügbar</small>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+       <div class="footer-container">
+           <div class="footer-section">
+               <h3>Über Career@Germany</h3>
+               <p>Career@Germany ist eine führende Gesundheitsberatung, die sich auf deutsche Karrieremöglichkeiten spezialisiert hat. Wir bieten umfassende Unterstützung für Pflegefachkräfte, Medizinstudenten und Gesundheitsmitarbeiter, die erfolgreiche Karrieren in Deutschlands erstklassigem Gesundheitssystem aufbauen möchten.</p>
+               <div class="footer-social">
+                   <a href="https://www.facebook.com/profile.php?id=61577329532504"
+                       class="facebook"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.linkedin.com/in/pflegecareer/"
+                       class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="https://www.instagram.com/pflegecareer?igsh=MXcwc295bGM0bnFpNA=="
+                       class="instagram"><i class="fab fa-instagram"></i></a>
+               </div>
+           </div>
+           <div class="footer-section">
+               <h3>📍 Kontaktinformationen</h3>
+               <p><strong>Career@Germany</strong></p>
+               <p><i class="fas fa-map-marker-alt" style="color: #ff4444;"></i> KK Arcade, Kothamangalam Bypass Junction<br>
+               near KCV Channel, Kothamangalam, Kerala, 686691</p>
+               <p><i class="fas fa-phone" style="color: #25D366;"></i> +91 9074847617 (Indien 1)</p>
+               <p><i class="fas fa-phone" style="color: #25D366;"></i> +91 79077282464 (Indien 2)</p>
+               <p><i class="fas fa-envelope" style="color: #3498db;"></i> info@pflegecareer.com</p>
+           </div>
+           <div class="footer-section">
+               <h3>🔗 Schnelllinks</h3>
+               <a href="index.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Startseite</a>
+               <a href="about.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Über uns</a>
+               <a href="services.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Unsere Dienstleistungen</a>
+               <a href="programs.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Gesundheitsprogramme</a>
+               <a href="blog.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Aktuelle Nachrichten</a>
+               <a href="contact.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Kontakt</a>
+           </div>
+           <div class="footer-section">
+               <h3>🎯 Beliebte Services</h3>
+               <a href="programs.html">Pflegekarriere-Vermittlung</a>
+               <a href="programs.html">Medizinstudium-Unterstützung</a>
+               <a href="services.html">Deutschkurse</a>
+               <a href="services.html">Visa & Einwanderung</a>
+               <a href="services.html">Qualifikationsanerkennung</a>
+               <a href="contact.html">Kostenlose Beratung</a>
+           </div>
+       </div>
+       <div class="footer-bottom">
+           <p>© 2025 Career@Germany. Alle Rechte vorbehalten. | Gesundheitskarrieren in Deutschland stärken</p>
+           <div style="display: flex; gap: 2rem;">
+               <a href="#">Datenschutzerklärung</a>
+               <a href="#">Nutzungsbedingungen</a>
+               <a href="#">Cookie-Richtlinie</a>
+           </div>
+       </div>
+   </footer>
+
+   <!-- WhatsApp Floating Button -->
+   <a href="https://wa.me/91907484761?text=Hallo!%20Ich%20möchte%20mehr%20über%20Gesundheitskarrieren%20in%20Deutschland%20erfahren.%20Bitte%20geben%20Sie%20mir%20Informationen%20über%20Ihre%20Dienstleistungen."
+       class="whatsapp-float" target="_blank" aria-label="Chat auf WhatsApp">
+       <i class="fab fa-whatsapp"></i>
+   </a>
+
+   <script>
+       // Enhanced mobile menu toggle
+       const hamburger = document.querySelector('.hamburger');
+       const navMenu = document.querySelector('.nav-menu');
+
+       hamburger.addEventListener('click', () => {
+           navMenu.classList.toggle('show');
+           hamburger.innerHTML = navMenu.classList.contains('show') ? 
+               '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+       });
+
+       // Close mobile menu when clicking on a link
+       document.querySelectorAll('.nav-menu a').forEach(link => {
+           link.addEventListener('click', () => {
+               navMenu.classList.remove('show');
+               hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+           });
+       });
+
+       // Enhanced header background on scroll
+       window.addEventListener('scroll', () => {
+           const header = document.querySelector('.header');
+           if (window.scrollY > 100) {
+               header.style.background = 'rgba(255, 255, 255, 0.98)';
+               header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.12)';
+           } else {
+               header.style.background = 'rgba(255, 255, 255, 0.98)';
+               header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.08)';
+           }
+       });
+
+       // Enhanced form validation
+       const contactForm = document.getElementById('contactForm');
+       const formGroups = document.querySelectorAll('.form-group');
+
+       function validateField(field) {
+           const formGroup = field.closest('.form-group');
+           const errorMessage = formGroup.querySelector('.error-message');
+           let isValid = true;
+
+           // Remove previous states
+           formGroup.classList.remove('error', 'success');
+           errorMessage.classList.remove('show');
+
+           // Check if field is required and empty
+           if (field.hasAttribute('required') && !field.value.trim()) {
+               isValid = false;
+               errorMessage.textContent = `Bitte geben Sie Ihre ${field.name.replace(/([A-Z])/g, ' $1').toLowerCase()} ein`;
+           }
+           // Email validation
+           else if (field.type === 'email' && field.value) {
+               const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+               if (!emailRegex.test(field.value)) {
+                   isValid = false;
+                   errorMessage.textContent = 'Bitte geben Sie eine gültige E-Mail-Adresse ein';
+               }
+           }
+           // Phone validation
+           else if (field.type === 'tel' && field.value) {
+               const phoneRegex = /^[\+]?[1-9][\d]{0,15}$/;
+               if (!phoneRegex.test(field.value.replace(/\s/g, ''))) {
+                   isValid = false;
+                   errorMessage.textContent = 'Bitte geben Sie eine gültige Telefonnummer ein';
+               }
+           }
+
+           // Apply validation styles
+           if (!isValid) {
+               formGroup.classList.add('error');
+               errorMessage.classList.add('show');
+           } else if (field.value.trim()) {
+               formGroup.classList.add('success');
+           }
+
+           return isValid;
+       }
+
+       // Real-time validation
+       document.querySelectorAll('input, select, textarea').forEach(field => {
+           field.addEventListener('blur', () => validateField(field));
+           field.addEventListener('input', () => {
+               if (field.closest('.form-group').classList.contains('error')) {
+                   validateField(field);
+               }
+           });
+       });
+
+       // FAQ Toggle
+       document.querySelectorAll('.faq-question').forEach(question => {
+           question.addEventListener('click', () => {
+               const faqItem = question.closest('.faq-item');
+               const answer = faqItem.querySelector('.faq-answer');
+               const isActive = question.classList.contains('active');
+
+               // Close all other FAQs
+               document.querySelectorAll('.faq-question').forEach(q => {
+                   q.classList.remove('active');
+                   q.closest('.faq-item').querySelector('.faq-answer').classList.remove('active');
+               });
+
+               // Toggle current FAQ
+               if (!isActive) {
+                   question.classList.add('active');
+                   answer.classList.add('active');
+               }
+           });
+       });
+
+       // Enhanced animation on scroll
+       const observerOptions = {
+           threshold: 0.1,
+           rootMargin: '0px 0px -100px 0px'
+       };
+
+       const observer = new IntersectionObserver((entries) => {
+           entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                   entry.target.classList.add('fade-in');
+               }
+           });
+       }, observerOptions);
+
+       // Observe all cards and sections
+       document.querySelectorAll('.contact-item, .hours-card, .faq-item').forEach(el => {
+           observer.observe(el);
+       });
+
+       // Auto-hide mobile menu on resize
+       window.addEventListener('resize', () => {
+           if (window.innerWidth > 768) {
+               navMenu.classList.remove('show');
+               hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+           }
+       });
+
+       // Enhanced WhatsApp button interaction
+       const whatsappBtn = document.querySelector('.whatsapp-float');
+       whatsappBtn.addEventListener('mouseenter', () => {
+           whatsappBtn.style.transform = 'scale(1.1) rotate(10deg)';
+       });
+       
+       whatsappBtn.addEventListener('mouseleave', () => {
+           whatsappBtn.style.transform = 'scale(1) rotate(0deg)';
+       });
+
+       // Enhanced loading animation
+       window.addEventListener('load', () => {
+           document.body.style.opacity = '0';
+           document.body.style.transition = 'opacity 0.8s ease-in';
+           setTimeout(() => {
+               document.body.style.opacity = '1';
+           }, 100);
+       });
+
+       console.log('🎉 Kontakt Seite erfolgreich geladen!');
+   </script>
+</body>
+
+</html>

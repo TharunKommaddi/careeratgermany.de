@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesundheitsprogramme - Career@Germany</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CY7FEDRNVJ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CY7FEDRNVJ');
+    </script>
+
+
+    
+    <meta name="description"
+        content="Entdecken Sie umfassende Gesundheitsprogramme in Deutschland. Pflegekarrieren, Medizinstudium, Sprachkurse und spezialisierte Gesundheitsausbildungsprogramme.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+
+
+    /* Logo Image Styles - Add this to your existing CSS */
+    /*
+	
+	.logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    border-radius: 8px; 
+    }
+    
+    .logo:hover .logo-img {
+    transform: scale(1.1);
+    }
+    */
+	.logo-img { 
+    height: 8mm; 
+    transform: scale(0.9);
+    transform-origin: left center;
+    margin-left: -1mm; 
+}
+.logo:hover .logo-img {
+transform: scale(1);
+}
+    /* Update existing .logo styles */
+    .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff4444;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0rem; /* Reduced gap from 0.5rem to 0.3rem */
+    }
+    
+    /* Fix navigation height - Add this to prevent nav from growing */
+    .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    min-height: 80px; /* Fixed height */
+    max-height: 80px; /* Prevent growth */
+    }
+
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff4444;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            position: relative;
+        }
+
+        .nav-menu a:hover,
+        .nav-menu a.active {
+            color: #ff4444;
+            background: rgba(255, 68, 68, 0.1);
+        }
+
+        .call-btn {
+            background: #25D366;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .call-btn:hover {
+            background: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #ff4444;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            padding: 150px 0 80px;
+            text-align: center;
+        }
+
+        .page-header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: #ff4444;
+        }
+
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Filter Section */
+        .filter-section {
+            background: white;
+            padding: 40px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .filter-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            text-align: center;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: transparent;
+            color: #64748b;
+            border: 2px solid #e2e8f0;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: #ff4444;
+            color: white;
+            border-color: #ff4444;
+            transform: translateY(-2px);
+        }
+
+        /* Programs Section */
+        .programs-section {
+            padding: 80px 0;
+            background: #f8fafc;
+        }
+
+        .programs-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #1e293b;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .programs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+        }
+
+        .program-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .program-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        .program-image {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .program-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .program-card:hover .program-image img {
+            transform: scale(1.1);
+        }
+
+        .program-category {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background: rgba(255, 68, 68, 0.9);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .program-info {
+            padding: 2rem;
+        }
+
+        .program-info h3 {
+            font-size: 1.4rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+        }
+
+        .program-info p {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+
+        .program-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .program-features li {
+            padding: 0.3rem 0;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .program-features li i {
+            color: #10b981;
+            width: 16px;
+        }
+
+        .program-btn {
+            background: #ff4444;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: 2px solid #ff4444;
+        }
+
+        .program-btn:hover {
+            background: transparent;
+            color: #ff4444;
+            transform: translateY(-2px);
+        }
+
+        /* Program Details */
+        .program-duration {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .duration-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        .duration-item i {
+            color: #ff4444;
+        }
+
+        /* Success Stories Section */
+        .success-section {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .success-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .success-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .success-card {
+            background: #f8fafc;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            border-left: 4px solid #ff4444;
+        }
+
+        .success-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+            border: 3px solid #ff4444;
+        }
+
+        .success-card h4 {
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .success-card .position {
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-card .quote {
+            color: #64748b;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .rating {
+            color: #ffc107;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e293b;
+            color: white;
+            padding: 60px 0 20px;
+        }
+
+        .footer-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+
+        .footer-section h3 {
+            color: #ff4444;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .footer-section p {
+            line-height: 1.8;
+            color: #cbd5e1;
+            margin-bottom: 1rem;
+        }
+
+        .footer-section a {
+            color: #cbd5e1;
+            text-decoration: none;
+            display: block;
+            padding: 0.3rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: #ff4444;
+            padding-left: 10px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: #334155;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .footer-social a:hover {
+            background: #ff4444;
+            transform: translateY(-3px);
+        }
+
+        .newsletter-form {
+            display: flex;
+            margin-top: 1rem;
+            gap: 0.5rem;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 8px;
+            background: #334155;
+            color: white;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: #ff4444;
+            background: #475569;
+        }
+
+        .newsletter-form input::placeholder {
+            color: #94a3b8;
+        }
+
+        .newsletter-form button {
+            background: #ff4444;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background: #e63946;
+            transform: translateY(-2px);
+        }
+
+        .footer-bottom {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid #334155;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-bottom a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-bottom a:hover {
+            color: #ff4444;
+        }
+
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+
+            50% {
+                box-shadow: 0 8px 35px rgba(37, 211, 102, 0.5), 0 0 0 10px rgba(37, 211, 102, 0.1);
+            }
+
+            100% {
+                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hamburger {
+                display: flex;
+            }
+
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: white;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: center;
+                transition: all 0.3s ease;
+                padding-top: 2rem;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu.show {
+                left: 0;
+            }
+
+            .call-btn {
+                display: none;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .programs-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-buttons {
+                gap: 0.5rem;
+            }
+
+            .filter-btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.9rem;
+            }
+
+            .success-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-bottom {
+                text-align: center;
+                flex-direction: column;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Filter Animation */
+        .filter-animation {
+            transition: all 0.3s ease;
+        }
+
+        .filter-hide {
+            opacity: 0;
+            transform: scale(0.8);
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">
+                <!-- <i class="fas fa-heartbeat"></i> Career@Germany -->
+                <!-- <img src="Images/Logo1/erasebg-transformed (7).png" alt="Career@Germany Logo" class="logo-img"> Career@Germany -->
+                <img src="Images/Logo1/erasebg-transformed (7).png" alt="Career@Germany Logo" class="logo-img">
+                <!-- <span style="color: black;">Pflege</span> Career -->
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="about.html">Über uns</a></li>
+                <li><a href="services.html">Dienstleistungen</a></li>
+                <li><a href="programs.html" class="active">Programme</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="tel:+9179077282464" class="call-btn">
+                <i class="fas fa-phone"></i> Anrufen
+            </a>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-container">
+            <h1 class="page-title">Gesundheits<span class="highlight">programme</span> in Deutschland</h1>
+            <p class="page-subtitle">Entdecken Sie umfassende Gesundheitskarriere-Programme und Möglichkeiten in Deutschland mit
+                Expertenberatung und Unterstützung während Ihres gesamten Bewerbungs- und Einwanderungsprozesses.</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+<section class="filter-section">
+    <div class="filter-container">
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Alle Programme</button>
+            <button class="filter-btn" data-filter="nursing">Pflegekarriere</button>
+            <button class="filter-btn" data-filter="volunteer">FSJ/BFD</button>
+            <button class="filter-btn" data-filter="training">Ausbildung</button>
+            <button class="filter-btn" data-filter="cultural">Au Pair</button>
+            <button class="filter-btn" data-filter="skilled">Chancenkarte</button>
+            <button class="filter-btn" data-filter="education">Master</button>
+        </div>
+    </div>
+</section>
+
+    <!-- Programs Section -->
+    <section class="programs-section">
+        <div class="programs-container">
+            <h2 class="section-title">Gesundheitskarriere <span class="highlight">Programme</span></h2>
+            <div class="programs-grid">
+                <!-- Nursing Programs -->
+                <div class="program-card filter-animation" data-category="nursing">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?w=400&h=250&fit=crop" alt="Pflegekarriere in Deutschland">
+                        <div class="program-category">🩺 Pflege</div>
+                    </div>
+                    <div class="program-info">
+                        <h3>Pflegekarriere in Deutschland (Pflegefachkraft)</h3>
+                        <div class="program-duration">
+                            <div class="duration-item">
+                                <i class="fas fa-clock"></i>
+                                <span>Vollzeit</span>
+                            </div>
+                            <div class="duration-item">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>€2.800-3.800/Monat</span>
+                            </div>
+                        </div>
+                        <p>Deutschland bietet hervorragende Möglichkeiten für internationale Pflegekräfte, in seinem fortschrittlichen Gesundheitssystem zu arbeiten. Pflegekräfte profitieren von wettbewerbsfähigen Gehältern, sozialer Sicherheit und beruflicher Entwicklung.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Beste deutsche Sprachausbildung (A1-B2)</li>
+                            <li><i class="fas fa-check"></i> Qualifikationsanerkennung (Anerkennung) Unterstützung</li>
+                            <li><i class="fas fa-check"></i> Direkte Krankenhausvermittlung mit Top-Arbeitgebern</li>
+                            <li><i class="fas fa-check"></i> Visa- und Einwanderungsbetreuung</li>
+                            <li><i class="fas fa-check"></i> Laufende Karriere- und Unterstützung nach der Ankunft</li>
+                        </ul>
+                        <a href="contact.html" class="program-btn">Jetzt bewerben <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- FSJ/BFD Programs -->
+                <div class="program-card filter-animation" data-category="volunteer">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=250&fit=crop" alt="FSJ/BFD Freiwilligenprogramme">
+                        <div class="program-category">🤝 Freiwilligendienst</div>
+                    </div>
+                    <div class="program-info">
+                        <h3>FSJ/BFD (Freiwilliges Soziales Jahr)</h3>
+                        <div class="program-duration">
+                            <div class="duration-item">
+                                <i class="fas fa-clock"></i>
+                                <span>12-18 Monate</span>
+                            </div>
+                            <div class="duration-item">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>€402-473/Monat</span>
+                            </div>
+                        </div>
+                        <p>Von der deutschen Regierung unterstützte freiwillige soziale Dienstprogramme, ideal für junge Menschen, die kulturellen Austausch und praktische Erfahrungen in sozialen, Gesundheits- oder Bildungsbereichen suchen.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Top-Beratung für beste Programmauswahl</li>
+                            <li><i class="fas fa-check"></i> Komplette Dokumentenvorbereitung</li>
+                            <li><i class="fas fa-check"></i> Deutsche Sprachkurse</li>
+                            <li><i class="fas fa-check"></i> Vorstellungsgesprächsvorbereitung</li>
+                            <li><i class="fas fa-check"></i> Visa-Bearbeitung und Unterstützung nach der Ankunft</li>
+                        </ul>
+                        <a href="contact.html" class="program-btn">Jetzt bewerben <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Ausbildung Training -->
+                <div class="program-card filter-animation" data-category="training">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=400&h=250&fit=crop" alt="Ausbildung Berufsausbildung">
+                        <div class="program-category">⚕️ Berufsausbildung</div>
+                    </div>
+                    <div class="program-info">
+                        <h3>Ausbildung (Berufsausbildung)</h3>
+                        <div class="program-duration">
+                            <div class="duration-item">
+                                <i class="fas fa-clock"></i>
+                                <span>2-3,5 Jahre</span>
+                            </div>
+                            <div class="duration-item">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>€550-1.500/Monat</span>
+                            </div>
+                        </div>
+                        <p>Deutschlands duales Berufsausbildungssystem, das praktische Arbeit mit Klassenunterricht in Bereichen wie Gesundheitswesen, IT, Ingenieurwesen und Gastgewerbe kombiniert.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Beste Karriereberatung für Programmauswahl</li>
+                            <li><i class="fas fa-check"></i> Bewerbungs- und Dokumentenvorbereitung</li>
+                            <li><i class="fas fa-check"></i> Direkte Vermittlung bei Top-Unternehmen</li>
+                            <li><i class="fas fa-check"></i> Visa-Betreuung und Vorstellungsgesprächstraining</li>
+                            <li><i class="fas fa-check"></i> Unterstützung und Orientierung nach der Ankunft</li>
+                        </ul>
+                        <a href="contact.html" class="program-btn">Jetzt bewerben <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Au Pair Program -->
+                <div class="program-card filter-animation" data-category="cultural">
+                    <div class="program-image">
+                        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=400&h=250&fit=crop" alt="Au Pair in Deutschland">
+                        <div class="program-category">👨‍👩‍👧‍👦 Kultureller Austausch</div>
+                    </div>
+                    <div class="program-info">
+                        <h3>Au Pair in Deutschland</h3>
+                        <div class="program-duration">
+                            <div class="duration-item">
+                                <i class="fas fa-clock"></i>
+                                <span>6-12 Monate</span>
+                            </div>
+                            <div class="duration-item">
+                                <i class="fas fa-euro-sign"></i>
+                                <span>€280/Monat</span>
+                            </div>
+                        </div>
+                        <p>Das Au Pair-Programm bietet jungen Menschen die Chance, bei einer deutschen Gastfamilie zu leben, sich um Kinder zu kümmern und die deutsche Kultur zu erleben.</p>
+                        <ul class="program-features">
+                            <li><i class="fas fa-check"></i> Top Au Pair-Familienvermittlung</li>
+                            <li><i class="fas fa-check"></i> Bewerbungs- und Visa-Bearbeitung</li>
+                            <li><i class="fas fa-check"></i> Deutsche Sprachkurse für Au Pairs</li>
+                            <li><i class="fas fa-check"></i> Vorbereitung vor der Abreise</li>
+                            <li>
+							
+							
+							<i class="fas fa-check"></i> Unterstützung nach der Ankunft</li>
+                       </ul>
+                       <a href="contact.html" class="program-btn">Jetzt bewerben <i class="fas fa-arrow-right"></i></a>
+                   </div>
+               </div>
+
+               <!-- Opportunity Card -->
+               <div class="program-card filter-animation" data-category="skilled">
+                   <div class="program-image">
+                       <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop" alt="Chancenkarte Deutschland">
+                       <div class="program-category">💼 Fachkraft</div>
+                   </div>
+                   <div class="program-info">
+                       <h3>Chancenkarte (Opportunity Card)</h3>
+                       <div class="program-duration">
+                           <div class="duration-item">
+                               <i class="fas fa-clock"></i>
+                               <span>Bis zu 1 Jahr</span>
+                           </div>
+                           <div class="duration-item">
+                               <i class="fas fa-search"></i>
+                               <span>Arbeitsplatzsuche</span>
+                           </div>
+                       </div>
+                       <p>Die Chancenkarte ermöglicht es Fachkräften, zur Arbeitsplatzsuche nach Deutschland zu kommen, basierend auf einem Punktesystem für Qualifikationen, Erfahrung und Sprachkenntnisse.</p>
+                       <ul class="program-features">
+                           <li><i class="fas fa-check"></i> Beste Berechtigung Bewertung und Punkteberechnung</li>
+                           <li><i class="fas fa-check"></i> Dokumentenvorbereitung und Bewerbungsunterstützung</li>
+                           <li><i class="fas fa-check"></i> Visa-Beratung und Arbeitsplatzsuche-Coaching</li>
+                           <li><i class="fas fa-check"></i> Unterstützung nach der Ankunft</li>
+                           <li><i class="fas fa-check"></i> Ansiedlungs- und Papierkram-Betreuung</li>
+                       </ul>
+                       <a href="contact.html" class="program-btn">Jetzt bewerben <i class="fas fa-arrow-right"></i></a>
+                   </div>
+               </div>
+
+               <!-- Masters Programs -->
+               <div class="program-card filter-animation" data-category="education">
+                   <div class="program-image">
+                       <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=250&fit=crop" alt="Master in Deutschland">
+                       <div class="program-category">🎓 Hochschulbildung</div>
+                   </div>
+                   <div class="program-info">
+                       <h3>Master in Deutschland</h3>
+                       <div class="program-duration">
+                           <div class="duration-item">
+                               <i class="fas fa-clock"></i>
+                               <span>2 Jahre</span>
+                           </div>
+                           <div class="duration-item">
+                               <i class="fas fa-graduation-cap"></i>
+                               <span>Master-Abschluss</span>
+                           </div>
+                       </div>
+                       <p>Deutschland ist bekannt für seine studiengebührenfreien oder kostengünstigen öffentlichen Universitäten, die hochwertige Master-Programme in englischer und deutscher Sprache in verschiedenen Bereichen anbieten.</p>
+                       <ul class="program-features">
+                           <li><i class="fas fa-check"></i> Top Universitäts- und Kursauswahl</li>
+                           <li><i class="fas fa-check"></i> Bewerbungs- und SOP-Beratung</li>
+                           <li><i class="fas fa-check"></i> Stipendien- und Finanzierungsberatung</li>
+                           <li><i class="fas fa-check"></i> Visa- und Vorbereitungsunterstützung</li>
+                           <li><i class="fas fa-check"></i> Betreuung nach der Ankunft</li>
+                       </ul>
+                       <a href="contact.html" class="program-btn">Jetzt bewerben <i class="fas fa-arrow-right"></i></a>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Success Stories Section -->
+   <section class="success-section">
+       <div class="success-container">
+           <h2 class="section-title">Erfolgs<span class="highlight">geschichten</span></h2>
+           <div class="success-grid">
+               <div class="success-card">
+                   <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=80&h=80&fit=crop&crop=face" alt="Abin Thomas" class="success-avatar">
+                   <h4>Abin Thomas</h4>
+                   <p class="position">Examierte Pflegefachkraft, Charité Hospital Berlin</p>
+                   <div class="rating">
+                       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                   </div>
+                   <p class="quote">"Career@Germany hat meinen Traum wahr werden lassen! Ihre umfassende Unterstützung half mir,
+                       eine Pflegestelle an der Charité zu bekommen. Ich verdiene jetzt €3.200/Monat und liebe meine Karriere
+                       in Deutschland."</p>
+               </div>
+               <div class="success-card">
+                   <img src="Images\Girls\Nurse1.jpg" alt="Ancy George" class="success-avatar">
+                   <h4>Ancy George</h4>
+                   <p class="position">Medizinstudentin, LMU München</p>
+                   <div class="rating">
+                       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                   </div>
+                   <p class="quote">"Dank ihrer fachkundigen Beratung wurde ich an der Ludwig-Maximilians-Universität
+                       für das Medizinstudium angenommen. Der Bewerbungsprozess und die Visa-Unterstützung wurden nahtlos abgewickelt!"</p>
+               </div>
+               <div class="success-card">
+                   <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=80&h=80&fit=crop&crop=face" alt="Sijo Varghese" class="success-avatar">
+                   <h4>Sijo Varghese</h4>
+                   <p class="position">Physiotherapeut, Hamburger Klinik</p>
+                   <div class="rating">
+                       <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                   </div>
+                   <p class="quote">"Das Physiotherapie-Programm war ausgezeichnet. Von der Qualifikationsanerkennung bis zur
+                       Arbeitsplatzvermittlung wurde alles professionell abgewickelt. Kann Career@Germany sehr empfehlen!"</p>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="footer">
+       <div class="footer-container">
+           <div class="footer-section">
+               <h3>Über Career@Germany</h3>
+               <p>Career@Germany ist eine führende Gesundheitsberatung, die sich auf deutsche Karrieremöglichkeiten spezialisiert hat. Wir
+                   bieten umfassende Unterstützung für Pflegefachkräfte, Medizinstudenten und Gesundheitsmitarbeiter,
+                   die erfolgreiche Karrieren in Deutschlands erstklassigem Gesundheitssystem aufbauen möchten.</p>
+               <div class="footer-social">
+                   <a href="https://www.facebook.com/profile.php?id=61577329532504"
+                       class="facebook"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                   <a href="https://www.linkedin.com/in/pflegecareer/"
+                       class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="https://www.instagram.com/pflegecareer?igsh=MXcwc295bGM0bnFpNA=="
+                       class="instagram"><i class="fab fa-instagram"></i></a>
+               </div>
+           </div>
+           <div class="footer-section">
+               <h3>📍 Kontaktinformationen</h3>
+               <p><strong>Career@Germany</strong></p>
+               <p><i class="fas fa-map-marker-alt" style="color: #ff4444;"></i> Suite Nr.: 693 2. Stock, Kc Arcade,<br>
+               PO, CSEZ, Kakkanad, Kochi, Kerala, <br> Indien - 682037</p>
+               <p><i class="fas fa-phone" style="color: #25D366;"></i> +91 9074847617 (Indien)</p>
+               <p><i class="fas fa-phone" style="color: #25D366;"></i> +49 176 24572472 (Deutschland)</p>
+               <p><i class="fas fa-envelope" style="color: #3498db;"></i> info@pflegecareer.com</p>
+           </div>
+           <div class="footer-section">
+               <h3>🔗 Schnelllinks</h3>
+               <a href="index.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Startseite</a>
+               <a href="about.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Über uns</a>
+               <a href="services.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Unsere Dienstleistungen</a>
+               <a href="programs.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Gesundheitsprogramme</a>
+               <a href="blog.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Aktuelle Nachrichten</a>
+               <a href="contact.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Kontakt</a>
+           </div>
+           <div class="footer-section">
+               <h3>📧 In Verbindung bleiben</h3>
+               <p>Abonnieren Sie, um die neuesten Updates zu deutschen Gesundheitsmöglichkeiten, Anmeldefristen,
+                   Sprachkursplänen und exklusiven Karrieretipps direkt in Ihrem Postfach zu erhalten.</p>
+               <div class="newsletter-form">
+                   <input type="email" placeholder="Geben Sie Ihre E-Mail-Adresse ein..." required>
+                   <button type="submit">Abonnieren</button>
+               </div>
+           </div>
+       </div>
+       <div class="footer-bottom">
+           <p>© 2025 Career@Germany. Alle Rechte vorbehalten. | Gesundheitskarrieren in Deutschland stärken</p>
+           <div style="display: flex; gap: 2rem;">
+               <a href="#">Datenschutzerklärung</a>
+               <a href="#">Nutzungsbedingungen</a>
+               <a href="#">Cookie-Richtlinie</a>
+           </div>
+       </div>
+   </footer>
+
+   <!-- WhatsApp Floating Button -->
+   <a href="https://wa.me/91907484761?text=Hallo!%20Ich%20möchte%20mehr%20über%20Gesundheitskarrieren%20in%20Deutschland%20erfahren.%20Bitte%20geben%20Sie%20mir%20Informationen%20über%20Ihre%20Dienstleistungen."
+       class="whatsapp-float" target="_blank" aria-label="Chat auf WhatsApp">
+       <i class="fab fa-whatsapp"></i>
+   </a>
+
+   <script>
+       // Enhanced mobile menu toggle
+       const hamburger = document.querySelector('.hamburger');
+       const navMenu = document.querySelector('.nav-menu');
+
+       hamburger.addEventListener('click', () => {
+           navMenu.classList.toggle('show');
+           hamburger.innerHTML = navMenu.classList.contains('show') ? 
+               '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+       });
+
+       // Close mobile menu when clicking on a link
+       document.querySelectorAll('.nav-menu a').forEach(link => {
+           link.addEventListener('click', () => {
+               navMenu.classList.remove('show');
+               hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+           });
+       });
+
+       // Enhanced header background on scroll
+       window.addEventListener('scroll', () => {
+           const header = document.querySelector('.header');
+           if (window.scrollY > 100) {
+               header.style.background = 'rgba(255, 255, 255, 0.98)';
+               header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.12)';
+           } else {
+               header.style.background = 'rgba(255, 255, 255, 0.98)';
+               header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.08)';
+           }
+       });
+
+       // Enhanced program filtering
+       const filterBtns = document.querySelectorAll('.filter-btn');
+       const programCards = document.querySelectorAll('.program-card');
+
+       filterBtns.forEach(btn => {
+           btn.addEventListener('click', () => {
+               // Remove active class from all buttons
+               filterBtns.forEach(b => b.classList.remove('active'));
+               // Add active class to clicked button
+               btn.classList.add('active');
+
+               const filterValue = btn.getAttribute('data-filter');
+               
+               // Add fade out effect
+               programCards.forEach(card => {
+                   card.style.opacity = '0';
+                   card.style.transform = 'translateY(20px)';
+               });
+
+               setTimeout(() => {
+                   programCards.forEach(card => {
+                       if (filterValue === 'all') {
+                           card.style.display = 'block';
+                           setTimeout(() => {
+                               card.style.opacity = '1';
+                               card.style.transform = 'translateY(0)';
+                           }, 100);
+                       } else {
+                           const cardCategory = card.getAttribute('data-category');
+                           if (cardCategory === filterValue) {
+                               card.style.display = 'block';
+                               setTimeout(() => {
+                                   card.style.opacity = '1';
+                                   card.style.transform = 'translateY(0)';
+                               }, 100);
+                           } else {
+                               card.style.display = 'none';
+                           }
+                       }
+                   });
+               }, 200);
+           });
+       });
+
+       // Enhanced newsletter form submission
+       const newsletterForm = document.querySelector('.newsletter-form');
+       newsletterForm.addEventListener('submit', (e) => {
+           e.preventDefault();
+           const email = e.target.querySelector('input').value;
+           if (email && email.includes('@')) {
+               const button = e.target.querySelector('button');
+               const originalText = button.textContent;
+               button.textContent = 'Abonniert!';
+               button.style.background = '#2ecc71';
+               
+               setTimeout(() => {
+                   button.textContent = originalText;
+                   button.style.background = '#ff4444';
+                   e.target.querySelector('input').value = '';
+               }, 2000);
+           } else {
+               alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
+           }
+       });
+
+       // Enhanced animation on scroll
+       const observerOptions = {
+           threshold: 0.1,
+           rootMargin: '0px 0px -100px 0px'
+       };
+
+       const observer = new IntersectionObserver((entries) => {
+           entries.forEach(entry => {
+               if (entry.isIntersecting) {
+                   entry.target.classList.add('fade-in');
+               }
+           });
+       }, observerOptions);
+
+       // Observe all cards and sections
+       document.querySelectorAll('.program-card, .success-card').forEach(el => {
+           observer.observe(el);
+       });
+
+       // Enhanced button click effects
+       document.querySelectorAll('.program-btn, .filter-btn').forEach(btn => {
+           btn.addEventListener('click', function(e) {
+               // Create ripple effect
+               const ripple = document.createElement('span');
+               const rect = this.getBoundingClientRect();
+               const size = Math.max(rect.width, rect.height);
+               const x = e.clientX - rect.left - size / 2;
+               const y = e.clientY - rect.top - size / 2;
+               
+               ripple.style.width = ripple.style.height = size + 'px';
+               ripple.style.left = x + 'px';
+               ripple.style.top = y + 'px';
+               ripple.style.position = 'absolute';
+               ripple.style.borderRadius = '50%';
+               ripple.style.background = 'rgba(255, 255, 255, 0.6)';
+               ripple.style.transform = 'scale(0)';
+               ripple.style.animation = 'ripple 0.6s linear';
+               ripple.style.pointerEvents = 'none';
+               
+               this.style.position = 'relative';
+               this.style.overflow = 'hidden';
+               this.appendChild(ripple);
+               
+               setTimeout(() => {
+                   ripple.remove();
+               }, 600);
+               
+               // Scale effect
+               this.style.transform = 'scale(0.98)';
+               setTimeout(() => {
+                   this.style.transform = '';
+               }, 150);
+           });
+       });
+
+       // Add ripple animation CSS
+       const style = document.createElement('style');
+       style.textContent = `
+           @keyframes ripple {
+               to {
+                   transform: scale(4);
+                   opacity: 0;
+               }
+           }
+       `;
+       document.head.appendChild(style);
+
+       // Auto-hide mobile menu on resize
+       window.addEventListener('resize', () => {
+           if (window.innerWidth > 768) {
+               navMenu.classList.remove('show');
+               hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+           }
+       });
+
+       // Enhanced WhatsApp button interaction
+       const whatsappBtn = document.querySelector('.whatsapp-float');
+       whatsappBtn.addEventListener('mouseenter', () => {
+           whatsappBtn.style.transform = 'scale(1.1) rotate(10deg)';
+       });
+       
+       whatsappBtn.addEventListener('mouseleave', () => {
+           whatsappBtn.style.transform = 'scale(1) rotate(0deg)';
+       });
+
+       // Enhanced loading animation
+       window.addEventListener('load', () => {
+           document.body.style.opacity = '0';
+           document.body.style.transition = 'opacity 0.8s ease-in';
+           setTimeout(() => {
+               document.body.style.opacity = '1';
+           }, 100);
+       });
+
+       // Program card hover effects
+       document.querySelectorAll('.program-card').forEach(card => {
+           card.addEventListener('mouseenter', function() {
+               this.style.transition = 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+           });
+           
+           card.addEventListener('mouseleave', function() {
+               this.style.transition = 'all 0.4s ease';
+           });
+       });
+
+       console.log('🎉 Programme Seite erfolgreich geladen!');
+   </script>
+</body>
+
+</html>
