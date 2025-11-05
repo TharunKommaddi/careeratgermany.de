@@ -137,6 +137,466 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
 
+/* ========================================
+UNIVERSAL RESPONSIVE CSS - ADD TO ALL PAGES
+======================================== */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+.hero-container,
+.about-container,
+.contact-container {
+gap: 3rem;
+}
+
+.hero-content h1,
+.page-title {
+font-size: 3rem;
+}
+
+.section-title {
+font-size: 2.2rem;
+}
+
+.nav-menu {
+gap: 1.5rem;
+}
+
+.nav-menu a {
+padding: 0.5rem 0.8rem;
+font-size: 0.95rem;
+}
+}
+
+/* Mobile Landscape & Small Tablets (481px - 768px) */
+@media (max-width: 768px) {
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+word-wrap: break-word;
+hyphens: auto;
+}
+
+/* Navigation */
+.hamburger {
+display: flex;
+}
+
+.nav-container {
+padding: 1rem;
+}
+
+.nav-menu {
+position: fixed;
+top: 80px;
+left: -100%;
+width: 100%;
+height: calc(100vh - 80px);
+background: white;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+transition: all 0.3s ease;
+padding-top: 2rem;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+gap: 0.5rem;
+z-index: 999;
+}
+
+.nav-menu.show {
+left: 0;
+}
+
+.nav-menu a {
+padding: 0.7rem 1rem;
+font-size: 1rem;
+width: 90%;
+text-align: center;
+}
+
+.call-btn {
+display: none;
+}
+
+/* Hero / Page Header */
+.hero,
+.page-header {
+padding: 100px 0 60px;
+min-height: auto;
+}
+
+.hero-container,
+.about-container,
+.contact-container,
+.featured-article {
+grid-template-columns: 1fr;
+gap: 2rem;
+text-align: center;
+padding: 0 1.5rem;
+}
+
+.hero-content h1,
+.page-title {
+font-size: 2.2rem;
+line-height: 1.3;
+}
+
+.hero-content p,
+.page-subtitle {
+font-size: 1.05rem;
+}
+
+.hero-buttons,
+.cta-buttons {
+justify-content: center;
+gap: 0.8rem;
+}
+
+.btn-primary,
+.btn-secondary,
+.service-btn,
+.program-btn,
+.article-btn,
+.read-more-btn {
+padding: 0.9rem 1.5rem;
+font-size: 0.95rem;
+}
+
+.customer-reviews {
+justify-content: center;
+font-size: 0.9rem;
+}
+
+.hero-image img {
+max-width: 400px;
+}
+
+.floating-label {
+display: none;
+}
+
+/* Grid Layouts */
+.services-grid,
+.programs-grid,
+.articles-grid,
+.features-grid,
+.process-steps,
+.team-grid,
+.success-grid,
+.hours-grid,
+.mission-grid,
+.stats-grid {
+grid-template-columns: 1fr;
+gap: 1.5rem;
+}
+
+/* Sections */
+.services,
+.programs-section,
+.articles-section,
+.features-section,
+.process-section,
+.mission-section,
+.team-section,
+.hours-section {
+padding: 60px 0;
+}
+
+.services-container,
+.programs-container,
+.articles-container,
+.features-container,
+.process-container,
+.mission-container,
+.team-container,
+.hours-container {
+padding: 0 1.5rem;
+}
+
+.section-title {
+font-size: 1.9rem;
+}
+
+/* Cards */
+.service-card,
+.program-card,
+.article-card,
+.feature-card,
+.mission-card,
+.team-card,
+.hours-card,
+.contact-item {
+padding: 2rem 1.5rem;
+}
+
+/* Process Steps */
+.process-step::after {
+display: none;
+}
+
+/* Forms */
+.contact-form-wrapper {
+padding: 2rem;
+}
+
+.form-row {
+grid-template-columns: 1fr;
+}
+
+/* Filter & Category Buttons */
+.filter-buttons,
+.category-filters {
+gap: 0.5rem;
+}
+
+.filter-btn,
+.category-btn {
+padding: 0.6rem 1rem;
+font-size: 0.9rem;
+}
+
+/* Map */
+.map-wrapper {
+padding: 2rem;
+}
+
+.map-placeholder {
+height: 300px;
+}
+
+/* Newsletter in CTA */
+.newsletter-section {
+padding: 60px 0;
+}
+
+.newsletter-form {
+flex-direction: column;
+gap: 0.8rem;
+}
+
+.newsletter-form input,
+.newsletter-form button {
+width: 100%;
+}
+
+/* Footer */
+.footer {
+padding: 40px 0 20px;
+}
+
+.footer-container {
+padding: 0 1.5rem;
+gap: 2rem;
+}
+
+.footer-section h3 {
+font-size: 1.2rem;
+}
+
+.footer-section p,
+.footer-section a {
+font-size: 0.95rem;
+line-height: 1.6;
+}
+
+.footer-bottom {
+text-align: center;
+flex-direction: column;
+gap: 1.5rem;
+}
+
+.footer-bottom > div {
+flex-direction: column;
+gap: 1rem !important;
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+bottom: 20px;
+right: 20px;
+width: 55px;
+height: 55px;
+font-size: 1.6rem;
+}
+}
+
+/* Mobile Portrait (320px - 480px) */
+@media (max-width: 480px) {
+/* Logo */
+.logo {
+font-size: 1.5rem;
+}
+
+.logo-img {
+height: 6mm;
+}
+
+/* Navigation */
+.nav-container {
+padding: 0.8rem 1rem;
+min-height: 70px;
+max-height: 70px;
+}
+
+.nav-menu {
+top: 70px;
+height: calc(100vh - 70px);
+}
+
+.nav-menu a {
+padding: 0.8rem 1rem;
+font-size: 0.95rem;
+}
+
+/* Hero / Page Header */
+.hero,
+.page-header {
+padding: 90px 0 50px;
+}
+
+.hero-container,
+.about-container,
+.contact-container {
+padding: 0 1rem;
+}
+
+.hero-content h1,
+.page-title {
+font-size: 1.8rem;
+}
+
+.section-subtitle {
+font-size: 0.95rem;
+}
+
+.hero-content p,
+.page-subtitle {
+font-size: 1rem;
+}
+
+.btn-primary,
+.btn-secondary,
+.service-btn,
+.program-btn,
+.article-btn,
+.read-more-btn,
+.submit-btn {
+padding: 0.8rem 1.3rem;
+font-size: 0.9rem;
+white-space: nowrap;
+}
+
+.customer-avatars img {
+width: 40px;
+height: 40px;
+}
+
+.customer-reviews {
+font-size: 0.85rem;
+}
+
+.hero-image img {
+max-width: 100%;
+}
+
+/* Section Titles */
+.section-title {
+font-size: 1.7rem;
+}
+
+/* Cards */
+.service-card,
+.program-card,
+.article-card,
+.feature-card,
+.mission-card,
+.team-card,
+.hours-card,
+.contact-item,
+.success-card,
+.faq-item {
+padding: 1.5rem 1rem;
+}
+
+.service-card h3,
+.program-card h3,
+.article-card h3 {
+font-size: 1.2rem;
+}
+
+.service-card p,
+.program-card p,
+.article-card p {
+font-size: 0.95rem;
+}
+
+.service-icon,
+.feature-icon {
+width: 70px;
+height: 70px;
+font-size: 1.8rem;
+}
+
+/* Stats */
+.stats-grid {
+grid-template-columns: repeat(2, 1fr);
+gap: 1rem;
+}
+
+.stat-item h3 {
+font-size: 2rem;
+}
+
+/* Forms */
+.contact-form-wrapper {
+padding: 1.5rem;
+}
+
+.form-group label {
+font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+padding: 0.8rem;
+font-size: 0.95rem;
+}
+
+/* Footer */
+.footer-section h3 {
+font-size: 1.1rem;
+}
+
+.footer-section p,
+.footer-section a {
+font-size: 0.9rem;
+}
+
+.footer-social a {
+width: 35px;
+height: 35px;
+font-size: 0.9rem;
+}
+
+/* WhatsApp Button */
+.whatsapp-float {
+bottom: 15px;
+right: 15px;
+width: 50px;
+height: 50px;
+font-size: 1.5rem;
+}
+}
+
+/* Extra Small Devices (< 320px) */ @media (max-width: 320px) { .hero-content h1, .page-title { font-size: 1.6rem; }
+    .section-title { font-size: 1.5rem; } .btn-primary, .btn-secondary, .service-btn, .program-btn { padding: 0.7rem
+    1.1rem; font-size: 0.85rem; } .service-card, .program-card, .contact-item { padding: 1.5rem 1rem; } }
+
+
+
+
+
+
 
         /* ADD THIS TO YOUR C@G RECRUITING WEBSITE */
 @media (max-width: 768px) {
@@ -1093,9 +1553,9 @@ max-height: 80px; /* Prevent growth */
                    </div>
                    <div class="contact-details">
                        <strong>C@G Recruiting</strong><br>
-                       Suite Nr.: 693 2. Stock, Kc Arcade,<br>
-                       PO, CSEZ, Kakkanad, Kochi, Kerala, <br>
-                       Indien - 682037
+                       Luther str. 24,<br>
+                       Chemnitz, <br>
+                       Deutschland - 09126
                    </div>
                </div>
 
@@ -1246,8 +1706,8 @@ max-height: 80px; /* Prevent growth */
                <div class="map-placeholder">
                    <div style="text-align: center;">
                        <i class="fas fa-map-marker-alt" style="font-size: 3rem; color: #ff4444; margin-bottom: 1rem;"></i><br>
-                       📍 Suite Nr.: 693 2. Stock, Kc Arcade,<br>
-                       PO, CSEZ, Kakkanad, Kochi, Kerala, <br> Indien - 682037<br>
+                       📍 Luther str. 24,<br>
+                       Chemnitz, <br> Deutschland - 09126<br>
                        <small style="color: #94a3b8;">Interaktive Kartenintegration verfügbar</small>
                    </div>
                </div>
@@ -1274,8 +1734,8 @@ max-height: 80px; /* Prevent growth */
            <div class="footer-section">
                <h3>📍 Kontaktinformationen</h3>
                <p><strong>C@G Recruiting</strong></p>
-               <p><i class="fas fa-map-marker-alt" style="color: #ff4444;"></i> KK Arcade, Kothamangalam Bypass Junction<br>
-               near KCV Channel, Kothamangalam, Kerala, 686691</p>
+               <p><i class="fas fa-map-marker-alt" style="color: #ff4444;"></i> Luther str. 24,<br>
+               Chemnitz, Deutschland, 09126</p>
                <p><i class="fas fa-phone" style="color: #25D366;"></i> +91 9074847617 (Indien 1)</p>
                <p><i class="fas fa-phone" style="color: #25D366;"></i> +91 79077282464 (Indien 2)</p>
                <p><i class="fas fa-envelope" style="color: #3498db;"></i> info@pflegecareer.com</p>
