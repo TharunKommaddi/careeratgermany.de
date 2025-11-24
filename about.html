@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Über C@G Recruiting - Beste deutsche Beratung in Kerala</title>
 
-
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CY7FEDRNVJ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,568 +12,15 @@
       gtag('js', new Date());
       gtag('config', 'G-CY7FEDRNVJ');
     </script>
-
-
     
     <meta name="description" content="Erfahren Sie mehr über C@G Recruitings Mission, Vision und unser Expertenteam, das sich dafür einsetzt, Gesundheitsfachkräften in Deutschland zum Erfolg zu verhelfen.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-
-
 /* ========================================
-UNIVERSAL RESPONSIVE CSS - ADD TO ALL PAGES
+   UNIVERSAL RESPONSIVE CSS & CORE STYLES
 ======================================== */
 
-/* Tablets (768px - 1024px) */
-@media (max-width: 1024px) {
-.hero-container,
-.about-container,
-.contact-container {
-gap: 3rem;
-}
-
-.hero-content h1,
-.page-title {
-font-size: 3rem;
-}
-
-.section-title {
-font-size: 2.2rem;
-}
-
-.nav-menu {
-gap: 1.5rem;
-}
-
-.nav-menu a {
-padding: 0.5rem 0.8rem;
-font-size: 0.95rem;
-}
-}
-
-/* Mobile Landscape & Small Tablets (481px - 768px) */
-@media (max-width: 768px) {
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-word-wrap: break-word;
-hyphens: auto;
-}
-
-/* Navigation */
-.hamburger {
-display: flex;
-}
-
-.nav-container {
-padding: 1rem;
-}
-
-.nav-menu {
-position: fixed;
-top: 80px;
-left: -100%;
-width: 100%;
-height: calc(100vh - 80px);
-background: white;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-transition: all 0.3s ease;
-padding-top: 2rem;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-gap: 0.5rem;
-z-index: 999;
-}
-
-.nav-menu.show {
-left: 0;
-}
-
-.nav-menu a {
-padding: 0.7rem 1rem;
-font-size: 1rem;
-width: 90%;
-text-align: center;
-}
-
-.call-btn {
-display: none;
-}
-
-/* Hero / Page Header */
-.hero,
-.page-header {
-padding: 100px 0 60px;
-min-height: auto;
-}
-
-.hero-container,
-.about-container,
-.contact-container,
-.featured-article {
-grid-template-columns: 1fr;
-gap: 2rem;
-text-align: center;
-padding: 0 1.5rem;
-}
-
-.hero-content h1,
-.page-title {
-font-size: 2.2rem;
-line-height: 1.3;
-}
-
-.hero-content p,
-.page-subtitle {
-font-size: 1.05rem;
-}
-
-.hero-buttons,
-.cta-buttons {
-justify-content: center;
-gap: 0.8rem;
-}
-
-.btn-primary,
-.btn-secondary,
-.service-btn,
-.program-btn,
-.article-btn,
-.read-more-btn {
-padding: 0.9rem 1.5rem;
-font-size: 0.95rem;
-}
-
-.customer-reviews {
-justify-content: center;
-font-size: 0.9rem;
-}
-
-.hero-image img {
-max-width: 400px;
-}
-
-.floating-label {
-display: none;
-}
-
-/* Grid Layouts */
-.services-grid,
-.programs-grid,
-.articles-grid,
-.features-grid,
-.process-steps,
-.team-grid,
-.success-grid,
-.hours-grid,
-.mission-grid,
-.stats-grid {
-grid-template-columns: 1fr;
-gap: 1.5rem;
-}
-
-/* Sections */
-.services,
-.programs-section,
-.articles-section,
-.features-section,
-.process-section,
-.mission-section,
-.team-section,
-.hours-section {
-padding: 60px 0;
-}
-
-.services-container,
-.programs-container,
-.articles-container,
-.features-container,
-.process-container,
-.mission-container,
-.team-container,
-.hours-container {
-padding: 0 1.5rem;
-}
-
-.section-title {
-font-size: 1.9rem;
-}
-
-/* Cards */
-.service-card,
-.program-card,
-.article-card,
-.feature-card,
-.mission-card,
-.team-card,
-.hours-card,
-.contact-item {
-padding: 2rem 1.5rem;
-}
-
-/* Process Steps */
-.process-step::after {
-display: none;
-}
-
-/* Forms */
-.contact-form-wrapper {
-padding: 2rem;
-}
-
-.form-row {
-grid-template-columns: 1fr;
-}
-
-/* Filter & Category Buttons */
-.filter-buttons,
-.category-filters {
-gap: 0.5rem;
-}
-
-.filter-btn,
-.category-btn {
-padding: 0.6rem 1rem;
-font-size: 0.9rem;
-}
-
-/* Map */
-.map-wrapper {
-padding: 2rem;
-}
-
-.map-placeholder {
-height: 300px;
-}
-
-/* Newsletter in CTA */
-.newsletter-section {
-padding: 60px 0;
-}
-
-.newsletter-form {
-flex-direction: column;
-gap: 0.8rem;
-}
-
-.newsletter-form input,
-.newsletter-form button {
-width: 100%;
-}
-
-/* Footer */
-.footer {
-padding: 40px 0 20px;
-}
-
-.footer-container {
-padding: 0 1.5rem;
-gap: 2rem;
-}
-
-.footer-section h3 {
-font-size: 1.2rem;
-}
-
-.footer-section p,
-.footer-section a {
-font-size: 0.95rem;
-line-height: 1.6;
-}
-
-.footer-bottom {
-text-align: center;
-flex-direction: column;
-gap: 1.5rem;
-}
-
-.footer-bottom > div {
-flex-direction: column;
-gap: 1rem !important;
-}
-
-/* WhatsApp Button */
-.whatsapp-float {
-bottom: 20px;
-right: 20px;
-width: 55px;
-height: 55px;
-font-size: 1.6rem;
-}
-}
-
-/* Mobile Portrait (320px - 480px) */
-@media (max-width: 480px) {
-/* Logo */
-.logo {
-font-size: 1.5rem;
-}
-
-.logo-img {
-height: 6mm;
-}
-
-/* Navigation */
-.nav-container {
-padding: 0.8rem 1rem;
-min-height: 70px;
-max-height: 70px;
-}
-
-.nav-menu {
-top: 70px;
-height: calc(100vh - 70px);
-}
-
-.nav-menu a {
-padding: 0.8rem 1rem;
-font-size: 0.95rem;
-}
-
-/* Hero / Page Header */
-.hero,
-.page-header {
-padding: 90px 0 50px;
-}
-
-.hero-container,
-.about-container,
-.contact-container {
-padding: 0 1rem;
-}
-
-.hero-content h1,
-.page-title {
-font-size: 1.8rem;
-}
-
-.section-subtitle {
-font-size: 0.95rem;
-}
-
-.hero-content p,
-.page-subtitle {
-font-size: 1rem;
-}
-
-.btn-primary,
-.btn-secondary,
-.service-btn,
-.program-btn,
-.article-btn,
-.read-more-btn,
-.submit-btn {
-padding: 0.8rem 1.3rem;
-font-size: 0.9rem;
-white-space: nowrap;
-}
-
-.customer-avatars img {
-width: 40px;
-height: 40px;
-}
-
-.customer-reviews {
-font-size: 0.85rem;
-}
-
-.hero-image img {
-max-width: 100%;
-}
-
-/* Section Titles */
-.section-title {
-font-size: 1.7rem;
-}
-
-/* Cards */
-.service-card,
-.program-card,
-.article-card,
-.feature-card,
-.mission-card,
-.team-card,
-.hours-card,
-.contact-item,
-.success-card,
-.faq-item {
-padding: 1.5rem 1rem;
-}
-
-.service-card h3,
-.program-card h3,
-.article-card h3 {
-font-size: 1.2rem;
-}
-
-.service-card p,
-.program-card p,
-.article-card p {
-font-size: 0.95rem;
-}
-
-.service-icon,
-.feature-icon {
-width: 70px;
-height: 70px;
-font-size: 1.8rem;
-}
-
-/* Stats */
-.stats-grid {
-grid-template-columns: repeat(2, 1fr);
-gap: 1rem;
-}
-
-.stat-item h3 {
-font-size: 2rem;
-}
-
-/* Forms */
-.contact-form-wrapper {
-padding: 1.5rem;
-}
-
-.form-group label {
-font-size: 0.95rem;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-padding: 0.8rem;
-font-size: 0.95rem;
-}
-
-/* Footer */
-.footer-section h3 {
-font-size: 1.1rem;
-}
-
-.footer-section p,
-.footer-section a {
-font-size: 0.9rem;
-}
-
-.footer-social a {
-width: 35px;
-height: 35px;
-font-size: 0.9rem;
-}
-
-/* WhatsApp Button */
-.whatsapp-float {
-bottom: 15px;
-right: 15px;
-width: 50px;
-height: 50px;
-font-size: 1.5rem;
-}
-}
-
-/* Extra Small Devices (< 320px) */ @media (max-width: 320px) { .hero-content h1, .page-title { font-size: 1.6rem; }
-    .section-title { font-size: 1.5rem; } .btn-primary, .btn-secondary, .service-btn, .program-btn { padding: 0.7rem
-    1.1rem; font-size: 0.85rem; } .service-card, .program-card, .contact-item { padding: 1.5rem 1rem; } }
-
-
-
-
-
-
-
-		/* ADD THIS TO YOUR C@G RECRUITING WEBSITE */
-@media (max-width: 768px) {
-    
-    /* Better text wrapping for German */
-    h1, h2, h3, h4, h5, h6 {
-        word-wrap: break-word;
-        hyphens: auto;
-        line-height: 1.3 !important;
-    }
-    
-    /* Navigation menu - make buttons smaller for German text */
-    .nav-menu a {
-        padding: 0.5rem 0.8rem !important;
-        font-size: 0.9rem !important;
-    }
-    
-    /* Button text wrapping */
-    .btn-primary, .btn-secondary {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    
-    /* Footer links - better spacing for German */
-    .footer-section a {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
-}
-
-		
-
-
-    /* Logo Image Styles - Add this to your existing CSS */
-    
-	
-	/*
-	
-	.logo-img {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
-    border-radius: 8px; 
-    }
-
-	
-	
-	
-    
-    .logo:hover .logo-img {
-    transform: scale(1.1);
-    }
-    */
-	
-	
-	.logo-img { 
-    height: 8mm; 
-    transform: scale(0.9);
-    transform-origin: left center;
-    margin-left: -1mm; 
-}
-.logo:hover .logo-img {
-transform: scale(1);
-}
-
-
-
-    /* Update existing .logo styles */
-    .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: #ff4444;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0rem; /* Reduced gap from 0.5rem to 0.3rem */
-    }
-    
-    /* Fix navigation height - Add this to prevent nav from growing */
-    .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    min-height: 80px; /* Fixed height */
-    max-height: 80px; /* Prevent growth */
-    }
-
-    
-	    
         * {
             margin: 0;
             padding: 0;
@@ -589,7 +34,7 @@ transform: scale(1);
             overflow-x: hidden;
         }
 
-        /* Header Styles */
+        /* --- Header Styles --- */
         .header {
             position: fixed;
             top: 0;
@@ -609,6 +54,8 @@ transform: scale(1);
             justify-content: space-between;
             align-items: center;
             padding: 1rem 2rem;
+            min-height: 80px;
+            max-height: 80px;
         }
 
         .logo {
@@ -618,7 +65,19 @@ transform: scale(1);
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0rem;
+        }
+
+        .logo-img { 
+            height: 8mm; 
+            transform: scale(0.9);
+            transform-origin: left center;
+            margin-left: -1mm; 
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover .logo-img {
+            transform: scale(1);
         }
 
         .nav-menu {
@@ -671,7 +130,7 @@ transform: scale(1);
             color: #ff4444;
         }
 
-        /* Page Header */
+        /* --- Page Header --- */
         .page-header {
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             padding: 150px 0 80px;
@@ -702,7 +161,7 @@ transform: scale(1);
             margin: 0 auto;
         }
 
-        /* About Content */
+        /* --- About Content --- */
         .about-content {
             padding: 80px 0;
             background: white;
@@ -763,7 +222,59 @@ transform: scale(1);
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
         }
 
-        /* Mission Vision Values */
+        /* --- FOUNDER SECTION (NEW) --- */
+        .founder-section {
+            padding: 80px 0;
+            background: #fff;
+            position: relative;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .founder-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .founder-image {
+            position: relative;
+        }
+
+        .founder-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 20px 20px 0px rgba(255, 68, 68, 0.1);
+        }
+
+        .founder-content h2 {
+            font-size: 2.2rem;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .founder-title {
+            color: #ff4444;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .founder-bio {
+            color: #64748b;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+
+        /* --- Mission Vision Values --- */
         .mission-section {
             padding: 80px 0;
             background: #f8fafc;
@@ -815,17 +326,9 @@ transform: scale(1);
             color: white;
         }
 
-        .mission-card:nth-child(1) .mission-icon {
-            background: linear-gradient(135deg, #ff4444, #e63946);
-        }
-
-        .mission-card:nth-child(2) .mission-icon {
-            background: linear-gradient(135deg, #10b981, #047857);
-        }
-
-        .mission-card:nth-child(3) .mission-icon {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-        }
+        .mission-card:nth-child(1) .mission-icon { background: linear-gradient(135deg, #ff4444, #e63946); }
+        .mission-card:nth-child(2) .mission-icon { background: linear-gradient(135deg, #10b981, #047857); }
+        .mission-card:nth-child(3) .mission-icon { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
 
         .mission-card h3 {
             font-size: 1.5rem;
@@ -838,7 +341,7 @@ transform: scale(1);
             line-height: 1.8;
         }
 
-        /* Team Section */
+        /* --- Team Section (Hierarchy) --- */
         .team-section {
             padding: 80px 0;
             background: white;
@@ -851,11 +354,32 @@ transform: scale(1);
             text-align: center;
         }
 
+        .team-category {
+            margin-bottom: 4rem;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            color: #1e293b;
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .category-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #ff4444;
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
         .team-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
-            margin-top: 3rem;
         }
 
         .team-card {
@@ -864,6 +388,7 @@ transform: scale(1);
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: all 0.3s ease;
+            border: 1px solid #f1f5f9;
         }
 
         .team-card:hover {
@@ -871,23 +396,13 @@ transform: scale(1);
             box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
         }
 
-        /*
         .team-card img {
             width: 100%;
-            height: 280px;
+            height: 320px;
             object-fit: cover;
+            object-position: center top;
         }
-        */
 
-        .team-card img {
-        width: 100%;
-        height: 280px;
-        object-fit: cover;
-        object-position: center 5%; /* This moves the focal point down */
-        }
-.team-card.face-down img {
-object-position: center 50%; /* Even lower positioning */
-}
         .team-info {
             padding: 2rem;
         }
@@ -898,39 +413,37 @@ object-position: center 50%; /* Even lower positioning */
             margin-bottom: 0.5rem;
         }
 
+        .team-role {
+            color: #ff4444;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
         .team-info p {
             color: #64748b;
             margin-bottom: 1.5rem;
         }
 
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .calendar-btn {
+            background: #1e293b;
             color: white;
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
             text-decoration: none;
+            font-size: 0.9rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
             transition: all 0.3s ease;
         }
 
-        .social-links a.facebook { background: #3b5998; }
-        .social-links a.twitter { background: #1da1f2; }
-        .social-links a.linkedin { background: #0077b5; }
-        .social-links a.instagram { background: #e4405f; }
-
-        .social-links a:hover {
-            transform: translateY(-3px) scale(1.1);
+        .calendar-btn:hover {
+            background: #ff4444;
         }
 
-        /* Stats Section */
+        /* --- Stats Section --- */
         .stats-section {
             padding: 80px 0;
             background: #1e293b;
@@ -962,7 +475,7 @@ object-position: center 50%; /* Even lower positioning */
             color: #cbd5e1;
         }
 
-        /* Footer */
+        /* --- Footer --- */
         .footer {
             background: #1e293b;
             color: white;
@@ -984,17 +497,13 @@ object-position: center 50%; /* Even lower positioning */
             font-size: 1.3rem;
         }
 
-        .footer-section p {
+        .footer-section p,
+        .footer-section a {
             line-height: 1.8;
             color: #cbd5e1;
             margin-bottom: 1rem;
-        }
-
-        .footer-section a {
-            color: #cbd5e1;
             text-decoration: none;
             display: block;
-            padding: 0.3rem 0;
             transition: color 0.3s ease;
         }
 
@@ -1017,12 +526,13 @@ object-position: center 50%; /* Even lower positioning */
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease;
+            padding: 0;
         }
 
         .footer-social a:hover {
             background: #ff4444;
             transform: translateY(-3px);
+            padding: 0;
         }
 
         .newsletter-form {
@@ -1038,18 +548,6 @@ object-position: center 50%; /* Even lower positioning */
             border-radius: 8px;
             background: #334155;
             color: white;
-            border: 2px solid transparent;
-            transition: all 0.3s ease;
-        }
-
-        .newsletter-form input:focus {
-            outline: none;
-            border-color: #ff4444;
-            background: #475569;
-        }
-
-        .newsletter-form input::placeholder {
-            color: #94a3b8;
         }
 
         .newsletter-form button {
@@ -1060,12 +558,6 @@ object-position: center 50%; /* Even lower positioning */
             border-radius: 8px;
             cursor: pointer;
             font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .newsletter-form button:hover {
-            background: #e63946;
-            transform: translateY(-2px);
         }
 
         .footer-bottom {
@@ -1082,14 +574,13 @@ object-position: center 50%; /* Even lower positioning */
         .footer-bottom a {
             color: #94a3b8;
             text-decoration: none;
-            transition: color 0.3s ease;
         }
 
         .footer-bottom a:hover {
             color: #ff4444;
         }
 
-        /* WhatsApp Floating Button */
+        /* --- WhatsApp Floating Button --- */
         .whatsapp-float {
             position: fixed;
             bottom: 30px;
@@ -1113,7 +604,6 @@ object-position: center 50%; /* Even lower positioning */
         .whatsapp-float:hover {
             background: #128C7E;
             transform: scale(1.1);
-            box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
         }
 
         @keyframes pulse {
@@ -1122,12 +612,25 @@ object-position: center 50%; /* Even lower positioning */
             100% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); }
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
+        /* Animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
 
+        @keyframes fadeInUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Queries */
+        @media (max-width: 1024px) {
+            .founder-container { grid-template-columns: 1fr; text-align: center; }
+            .founder-image img { height: 350px; max-width: 400px; margin: 0 auto; display: block; }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger { display: flex; }
             .nav-menu {
                 position: fixed;
                 top: 80px;
@@ -1141,74 +644,24 @@ object-position: center 50%; /* Even lower positioning */
                 transition: all 0.3s ease;
                 padding-top: 2rem;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                gap: 0.5rem;
             }
-
-            .nav-menu.show {
-                left: 0;
-            }
-
-            .call-btn {
-                display: none;
-            }
-
-            .page-title {
-                font-size: 2rem;
-            }
-
-            .about-container {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .mission-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .about-features {
-                grid-template-columns: 1fr;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .footer-bottom {
-                text-align: center;
-                flex-direction: column;
-            }
-        }
-
-        /* Animation Classes */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.8s ease forwards;
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            .nav-menu.show { left: 0; }
+            .call-btn { display: none; }
+            .about-container { grid-template-columns: 1fr; }
+            .about-features { grid-template-columns: 1fr; }
+            .mission-grid { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .footer-bottom { text-align: center; flex-direction: column; }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header class="header">
         <nav class="nav-container">
             <a href="index.html" class="logo">
-                <!-- <i class="fas fa-heartbeat"></i> C@G Recruiting -->
-
-                <!-- <img src="Images/Logo1/erasebg-transformed (7).png" alt="C@G Recruiting Logo" class="logo-img"> C@G Recruiting -->
                 <img src="Images/Logo1/erasebg-transformed (7).png" alt="C@G Recruiting Logo" class="logo-img"> 
-				<!-- <span style="color: black;">Pflege</span> Career -->
-
-                
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html">Startseite</a></li>
@@ -1216,6 +669,7 @@ object-position: center 50%; /* Even lower positioning */
                 <li><a href="services.html">Dienstleistungen</a></li>
                 <li><a href="programs.html">Programme</a></li>
                 <li><a href="blog.html">Blog</a></li>
+                <li><a href="testimonials.html">Erfolgsgeschichten</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
             <div class="hamburger">
@@ -1227,7 +681,6 @@ object-position: center 50%; /* Even lower positioning */
         </nav>
     </header>
 
-    <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-container">
             <h1 class="page-title">Über <span class="highlight">C@G Recruiting</span></h1>
@@ -1235,51 +688,49 @@ object-position: center 50%; /* Even lower positioning */
         </div>
     </section>
 
-    <!-- About Content -->
+    <section class="founder-section">
+        <div class="founder-container">
+            <div class="founder-image">
+                <img src="Images/Team/Founder.jpg" alt="Jomy Joseph" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=450&fit=crop'">
+            </div>
+            <div class="founder-content">
+                <span class="founder-title">Gründer & Geschäftsführer</span>
+                <h2>Jomy Joseph</h2>
+                <div class="founder-bio">
+                    <p>Willkommen bei C@G Recruiting. Als Gründer ist es meine Vision, eine vertrauenswürdige Brücke zwischen talentierten Fachkräften und dem deutschen Gesundheitswesen zu bauen.</p>
+                    <p>Mit jahrelanger Erfahrung in Deutschland verstehe ich die Herausforderungen und Chancen, die ein Umzug mit sich bringt. Mein Ziel ist es, Ihnen nicht nur einen Job zu vermitteln, sondern eine nachhaltige Karriere und ein neues Zuhause in Deutschland zu ermöglichen.</p>
+                    <p>Wir begleiten Sie persönlich – vom ersten Deutschkurs bis zur erfolgreichen Integration in Ihrer neuen Heimat.</p>
+                    <br>
+                    <a href="contact.html" class="call-btn" style="display:inline-flex; background:#1e293b;">Kontaktieren Sie mich</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="about-content">
         <div class="about-container">
             <div class="about-text">
                 <h2>Gesundheitskarrieren in <span class="highlight">Deutschland</span> stärken</h2>
                 <p>C@G Recruiting ist die beste und führende deutsche Beratung in Kerala mit unserem Hauptsitz in Deutschland. Wir sind darauf spezialisiert, Gesundheitsfachkräfte und Studenten zu lohnenden Karrierewegen in Deutschlands renommiertem Gesundheitssektor zu führen.</p>
-				<p>Unser Expertenteam bietet engagierte Unterstützung für FSJ, Au Pair, Ausbildung, Master und Pflegefachkrafts in Deutschland. Als führende deutsche Bildungsberater in Kerala gewährleisten wir erstklassige Zulassungsbetreuung für studiengebührenfreie öffentliche Universitäten, komplette deutsche Visa-Services und gründliche Unterstützung nach der Ankunft, um Ihren Übergang reibungslos und erfolgreich zu gestalten.</p>
-				<p>C@G Recruiting ist auch als das beste Institut für Online-Deutschkurse, professionelle deutsche Übersetzungen, Beglaubigungen, Anerkennungsverfahren, medizinisches Deutschtraining und hervorragende Vorstellungsgesprächsvorbereitung anerkannt. Mit jahrelanger Erfahrung und einem tiefen Verständnis sowohl des deutschen Systems als auch der Wünsche indischer Studenten bieten wir personalisierte Services, die Ihnen helfen, Ihre Ziele zu erreichen.</p>
-				<p>Wählen Sie die führende Ausbildungs-, FSJ- und Au Pair-Beratung in Kerala für kostenlose Bildung, vertrauensvolle deutsche Studienberatung und eine erfolgreiche Karriere in Deutschland.</p>
+                <p>Unser Expertenteam bietet engagierte Unterstützung für FSJ, Au Pair, Ausbildung, Master und Pflegefachkrafts in Deutschland. Als führende deutsche Bildungsberater in Kerala gewährleisten wir erstklassige Zulassungsbetreuung für studiengebührenfreie öffentliche Universitäten, komplette deutsche Visa-Services und gründliche Unterstützung nach der Ankunft, um Ihren Übergang reibungslos und erfolgreich zu gestalten.</p>
+                <p>C@G Recruiting ist auch als das beste Institut für Online-Deutschkurse, professionelle deutsche Übersetzungen, Beglaubigungen, Anerkennungsverfahren, medizinisches Deutschtraining und hervorragende Vorstellungsgesprächsvorbereitung anerkannt. Mit jahrelanger Erfahrung und einem tiefen Verständnis sowohl des deutschen Systems als auch der Wünsche indischer Studenten bieten wir personalisierte Services, die Ihnen helfen, Ihre Ziele zu erreichen.</p>
+                <p>Wählen Sie die führende Ausbildungs-, FSJ- und Au Pair-Beratung in Kerala für kostenlose Bildung, vertrauensvolle deutsche Studienberatung und eine erfolgreiche Karriere in Deutschland.</p>
                 <div class="about-features">
                     <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <div>
-                            <strong>100% Visa-Erfolgsquote</strong><br>
-                            Bewährte Erfolgsbilanz
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-check"></i></div>
+                        <div><strong>100% Visa-Erfolgsquote</strong><br>Bewährte Erfolgsbilanz</div>
                     </div>
                     <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div>
-                            <strong>1.000+ Vermittlungen</strong><br>
-                            Erfolgreiche Karrieren gestartet
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-users"></i></div>
+                        <div><strong>1.000+ Vermittlungen</strong><br>Erfolgreiche Karrieren gestartet</div>
                     </div>
                     <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-globe"></i>
-                        </div>
-                        <div>
-                            <strong>Schnellere Bearbeitung</strong><br>
-                            Globaler Kundenstamm
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-globe"></i></div>
+                        <div><strong>Schnellere Bearbeitung</strong><br>Globaler Kundenstamm</div>
                     </div>
                     <div class="feature-item">
-                        <div class="feature-icon">
-                            <i class="fas fa-clock"></i>
-                        </div>
-                        <div>
-                            <strong>24/7 Support</strong><br>
-                            Kontinuierliche Betreuung
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <div><strong>24/7 Support</strong><br>Kontinuierliche Betreuung</div>
                     </div>
                 </div>
             </div>
@@ -1289,29 +740,22 @@ object-position: center 50%; /* Even lower positioning */
         </div>
     </section>
 
-    <!-- Mission Vision Values -->
     <section class="mission-section">
         <div class="mission-container">
             <h2 class="section-title">Unsere Mission, Vision & <span class="highlight">Werte</span></h2>
             <div class="mission-grid">
                 <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-bullseye"></i>
-                    </div>
+                    <div class="mission-icon"><i class="fas fa-bullseye"></i></div>
                     <h3>Unsere Mission</h3>
                     <p>Die Lücke zwischen talentierten Gesundheitsfachkräften weltweit und außergewöhnlichen Karrieremöglichkeiten in Deutschlands Gesundheitssystem zu schließen und umfassende Unterstützung und Beratung während der gesamten Reise zu bieten.</p>
                 </div>
                 <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
+                    <div class="mission-icon"><i class="fas fa-eye"></i></div>
                     <h3>Unsere Vision</h3>
                     <p>Die vertrauenswürdigste und bevorzugte Gesundheitskarriere-Beratung zu werden, global anerkannt für unsere Exzellenz in der Verbindung von Gesundheitsfachkräften mit erfolgreichen Karrieren in Deutschland.</p>
                 </div>
                 <div class="mission-card">
-                    <div class="mission-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
+                    <div class="mission-icon"><i class="fas fa-heart"></i></div>
                     <h3>Unsere Werte</h3>
                     <p>Integrität, Exzellenz, Personalisierter Service, Kulturelle Sensibilität und Engagement für den Erfolg. Wir glauben daran, dauerhafte Beziehungen aufzubauen, die auf Vertrauen und gegenseitigem Respekt basieren.</p>
                 </div>
@@ -1319,311 +763,161 @@ object-position: center 50%; /* Even lower positioning */
         </div>
     </section>
 
-    <!-- Team Section -->
     <section class="team-section">
         <div class="team-container">
-            <h2 class="section-title">Lernen Sie unser Experten<span class="highlight">team</span> kennen</h2>
-            <div class="team-grid">
-                <div class="team-card">
-                    <!-- <img src="Images/Girls/Mariya.jpg" alt="Frau Mariya"> -->
-                    <img src="Images/Photos/1280x1280-4.png" alt="Frau Mariya">
-                    <div class="team-info">
-                        <h3>Frau Mariya</h3>
-                        <p>Pflegefachfrau | Offenburg | 2023</p>
-                        <!--
-						<div class="social-links">
-                            <a href="https://www.facebook.com/profile.php?id=61577329532504" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.linkedin.com/in/pflegecareer/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/pflegecareer?igsh=MXcwc295bGM0bnFpNA==" class="instagram"><i class="fab fa-instagram"></i></a>
+            <h2 class="section-title">Unser <span class="highlight">Team</span></h2>
+            
+            <div class="team-category">
+                <h3 class="category-title">Sprachtraining & Beratung</h3>
+                <div class="team-grid" style="justify-content: center; display:flex; flex-wrap:wrap;">
+                    <div class="team-card" style="max-width: 350px;">
+                        <img src="Images/Team/Anju.jpg" alt="Anju" onerror="this.src='https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=320&fit=crop'">
+                        <div class="team-info">
+                            <h3>Frau Anju</h3>
+                            <span class="team-role">Senior Deutschlehrerin & Beraterin</span>
+                            <p>Expertin für medizinisches Deutsch und Integrationsberatung. Sie bereitet unsere Kandidaten optimal auf den deutschen Arbeitsalltag vor.</p>
+                            <a href="contact.html" class="calendar-btn">
+                                <i class="fas fa-calendar-alt"></i> Termin buchen
+                            </a>
                         </div>
-						
-						-->
                     </div>
                 </div>
-                <div class="team-card">
-                <!-- /domains/pflegecareer.com/public_html/Images/Girls/Mariya.jpg -->
-                    <!-- <img src="Images/Boys/John.jpg" alt="Herr John"> -->
-                    <img src="Images/Photos/1280x1280-6.png" alt="Herr John">
-                    <div class="team-info">
-                        <h3>Herr John</h3>
-                        <p>Pflegefachmann | Stuttgart | 2024</p>
-                        <!--
-						<div class="social-links">
-                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="team-category">
+                <h3 class="category-title">Erfolgsgeschichten & Support</h3>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <img src="Images/Photos/1280x1280-4.png" alt="Frau Mariya">
+                        <div class="team-info">
+                            <h3>Frau Mariya</h3>
+                            <span class="team-role">Pflegefachfrau | Offenburg</span>
+                            <p>Erfolgreich vermittelt 2023. Unterstützt nun neue Kandidaten mit ihren Erfahrungen bei der Integration.</p>
                         </div>
-						-->
+                    </div>
+                    <div class="team-card">
+                        <img src="Images/Photos/1280x1280-6.png" alt="Herr John">
+                        <div class="team-info">
+                            <h3>Herr John</h3>
+                            <span class="team-role">Pflegefachmann | Stuttgart</span>
+                            <p>Erfolgreich vermittelt 2024. Spezialisiert auf Fragen zur Anerkennung und Arbeit im Krankenhaus.</p>
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="team-card">
-                    <img src="https://images.unsplash.com/photo-1494790108755-2616b332e234?w=320&h=280&fit=crop&crop=face" alt="Dr. Anna Weber">
-                    <div class="team-info">
-                         <h3>Dr. Anna Weber</h3>
-                        <p>Medical Studies Director & University Admission Counselor</p>
-                        
-						<div class="social-links">
-                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
-                        </div>
-						
+            </div>
+        </div>
+    </section>
+
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stats-grid">
+                <div class="stat-item"><h3>1000+</h3><p>Erfolgreiche Vermittlungen</p></div>
+                <div class="stat-item"><h3>100%</h3><p>Visa-Erfolgsquote</p></div>
+                <div class="stat-item" style="display:flex; flex-direction:column; justify-content:center; align-items:center;">
+                    <div style="display:flex; justify-content:center; align-items:center; gap:0.25em; line-height:1;">
+                        <span style="font-size:2.5rem; font-weight:700; color:#ff4444;">24</span>
+                        <span style="font-size:2.2rem; color:#e2e8f0;">/</span>
+                        <span style="font-size:2.5rem; font-weight:700; color:#ff4444;">7</span>
                     </div>
-					
-					
-					
-					</div>
-   			
-   			-->
-           </div>
-       </div>
-   </section>
+                    <p style="font-size:1rem; color:#cbd5e1; margin-top:0.5em; margin-bottom:0;">Stunden Support verfügbar</p>
+                </div>
+                <div class="stat-item"><h3>100+</h3><p>Partner-Krankenhäuser</p></div>
+            </div>
+        </div>
+    </section>
 
-   <!-- Stats Section -->
-   <section class="stats-section">
-       <div class="stats-container">
-           <div class="stats-grid">
-               <div class="stat-item">
-                   <h3>1000+</h3>
-                   <p>Erfolgreiche Vermittlungen</p>
-               </div>
-               <div class="stat-item">
-                   <h3>100%</h3>
-                   <p>Visa-Erfolgsquote</p>
-               </div>
-               <div class="stat-item">
-                   <h3>100+</h3>
-                   <p>Krankenhaus-Kundenstamm</p>
-               </div>
-               <div class="stat-item">
-                   <h3>8+</h3>
-                   <p>Jahre Erfahrung</p>
-               </div>
-               <!-- <div class="stat-item">
-                   <h3>24</h3><h3>/</h3><h3>7</h3>
-                   <p>Stunden Support verfügbar</p>
-               </div>
-			   -->
-			   
-	<div class="stat-item" style="flex:1; text-align:center; font-family:'Segoe UI', sans-serif; display:flex; flex-direction:column; justify-content:center; align-items:center;">
-  <div style="display:flex; justify-content:center; align-items:center; gap:0.25em; line-height:1;">
-    <span style="font-size:2.5rem; font-weight:700; color:#ff4444;">24</span>
-    <span style="font-size:2.2rem; color:#e2e8f0;">/</span>
-    <span style="font-size:2.5rem; font-weight:700; color:#ff4444;">7</span>
-  </div>
-  <p style="font-size:1rem; color:#cbd5e1; margin-top:0.5em; margin-bottom:0;">
-    Stunden Support verfügbar
-  </p>
-</div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Über C@G Recruiting</h3>
+                <p>C@G Recruiting ist eine führende Gesundheitsberatung, die sich auf deutsche Karrieremöglichkeiten spezialisiert hat.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>📍 Kontaktinformationen</h3>
+                <p><strong>C@G Recruiting</strong></p>
+                <p><i class="fas fa-map-marker-alt" style="color: #ff4444;"></i> Luther str. 24, Chemnitz, 09126</p>
+                <p><i class="fas fa-phone" style="color: #25D366;"></i> +49 157 3986 6872</p>
+                <p><i class="fas fa-envelope" style="color: #3498db;"></i> jomy.joseph@careeratgermany.de</p>
+            </div>
+            <div class="footer-section">
+                <h3>🔗 Schnelllinks</h3>
+                <a href="index.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Startseite</a>
+                <a href="about.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Über uns</a>
+                <a href="services.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Dienstleistungen</a>
+                <a href="programs.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Programme</a>
+                <a href="blog.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Blog</a>
+                <a href="testimonials.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Erfolgsgeschichten</a>
+            </div>
+            <div class="footer-section">
+                <h3>📧 Newsletter</h3>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="E-Mail-Adresse..." required>
+                    <button type="submit">Abo</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 C@G Recruiting. Alle Rechte vorbehalten.</p>
+            <div style="display: flex; gap: 2rem;">
+                <a href="datenschutz.html">Datenschutzerklärung</a>
+                <a href="#">Nutzungsbedingungen</a>
+                <a href="#">Impressum</a>
+            </div>
+        </div>
+    </footer>
 
+    <a href="https://wa.me/4915739866872?text=Hallo!" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+            hamburger.innerHTML = navMenu.classList.contains('show') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        document.querySelectorAll('.nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('show');
+                hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+        
+        // Counters
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-item h3');
+            counters.forEach(counter => {
+                if(counter.textContent.includes('/')) return;
+                const target = parseInt(counter.textContent.replace(/[^0-9]/g, ''));
+                const increment = target / 100;
+                let current = 0;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        counter.textContent = counter.textContent.replace(/[0-9,]+/, target.toLocaleString());
+                        clearInterval(timer);
+                    } else {
+                        counter.textContent = counter.textContent.replace(/[0-9,]+/, Math.floor(current).toLocaleString());
+                    }
+                }, 20);
+            });
+        }
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { animateCounters(); statsObserver.unobserve(entry.target); }
+            });
+        }, { threshold: 0.5 });
+        statsObserver.observe(document.querySelector('.stats-section'));
 
-
-
-
-               <div class="stat-item">
-                   <h3>100+</h3>
-                   <p>Partner-Krankenhäuser</p>
-               </div>
-           </div>
-       </div>
-   </section>
-
-   <!-- Footer -->
-   <footer class="footer">
-       <div class="footer-container">
-           <div class="footer-section">
-               <h3>Über C@G Recruiting</h3>
-               <p>C@G Recruiting ist eine führende Gesundheitsberatung, die sich auf deutsche Karrieremöglichkeiten spezialisiert hat. Wir bieten umfassende Unterstützung für Pflegefachkräfte, Medizinstudenten und Gesundheitsmitarbeiter, die erfolgreiche Karrieren in Deutschlands erstklassigem Gesundheitssystem aufbauen möchten.</p>
-               <div class="footer-social">
-                   <a href="#"><i class="fab fa-facebook-f"></i></a>
-                   <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                   <a href="#"><i class="fab fa-instagram"></i></a>
-                   <a href="#"><i class="fab fa-twitter"></i></a>
-               </div>
-           </div>
-           <div class="footer-section">
-               <h3>📍 Kontaktinformationen</h3>
-               <p><strong>C@G Recruiting</strong></p>
-               <p><i class="fas fa-map-marker-alt" style="color: #ff4444;"></i> Luther str. 24,<br>
-               Chemnitz, <br> Deutschland - 09126</p>
-               <!-- <p><i class="fas fa-phone" style="color: #25D366;"></i> +91 9074847617 (Indien)</p> -->
-               <p><i class="fas fa-phone" style="color: #25D366;"></i> +49 157 3986 6872 (Deutschland)</p>
-               <p><i class="fas fa-envelope" style="color: #3498db;"></i> jomy.joseph@careeratgermany.de</p>
-           </div>
-           <div class="footer-section">
-               <h3>🔗 Schnelllinks</h3>
-               <a href="index.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Startseite</a>
-               <a href="about.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Über uns</a>
-               <a href="services.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Unsere Dienstleistungen</a>
-               <a href="programs.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Gesundheitsprogramme</a>
-               <a href="blog.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Aktuelle Nachrichten</a>
-               <a href="contact.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Kontakt</a>
-           </div>
-           <div class="footer-section">
-               <h3>📧 In Verbindung bleiben</h3>
-               <p>Abonnieren Sie, um die neuesten Updates zu deutschen Gesundheitsmöglichkeiten, Anmeldefristen, Sprachkursplänen und exklusiven Karrieretipps direkt in Ihrem Postfach zu erhalten.</p>
-               <div class="newsletter-form">
-                   <input type="email" placeholder="Geben Sie Ihre E-Mail-Adresse ein..." required>
-                   <button type="submit">Abonnieren</button>
-               </div>
-           </div>
-       </div>
-       <div class="footer-bottom">
-           <p>© 2025 C@G Recruiting. Alle Rechte vorbehalten. | Gesundheitskarrieren in Deutschland stärken</p>
-           <div style="display: flex; gap: 2rem;">
-               <a href="#">Datenschutzerklärung</a>
-               <a href="#">Nutzungsbedingungen</a>
-               <a href="#">Cookie-Richtlinie</a>
-           </div>
-       </div>
-   </footer>
-
-   <!-- WhatsApp Floating Button -->
-   <a href="https://wa.me/919074847617?text=Hallo!%20Ich%20möchte%20mehr%20über%20Gesundheitskarrieren%20in%20Deutschland%20erfahren.%20Bitte%20geben%20Sie%20mir%20Informationen%20über%20Ihre%20Dienstleistungen." 
-      class="whatsapp-float" 
-      target="_blank" 
-      aria-label="Chat auf WhatsApp">
-       <i class="fab fa-whatsapp"></i>
-   </a>
-
-   <script>
-       // Enhanced mobile menu toggle
-       const hamburger = document.querySelector('.hamburger');
-       const navMenu = document.querySelector('.nav-menu');
-
-       hamburger.addEventListener('click', () => {
-           navMenu.classList.toggle('show');
-           hamburger.innerHTML = navMenu.classList.contains('show') ? 
-               '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-       });
-
-       // Close mobile menu when clicking on a link
-       document.querySelectorAll('.nav-menu a').forEach(link => {
-           link.addEventListener('click', () => {
-               navMenu.classList.remove('show');
-               hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-           });
-       });
-
-       // Enhanced header background on scroll
-       window.addEventListener('scroll', () => {
-           const header = document.querySelector('.header');
-           if (window.scrollY > 100) {
-               header.style.background = 'rgba(255, 255, 255, 0.98)';
-               header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.12)';
-           } else {
-               header.style.background = 'rgba(255, 255, 255, 0.98)';
-               header.style.boxShadow = '0 4px 30px rgba(0, 0, 0, 0.08)';
-           }
-       });
-
-       // Enhanced newsletter form submission
-       const newsletterForm = document.querySelector('.newsletter-form');
-       newsletterForm.addEventListener('submit', (e) => {
-           e.preventDefault();
-           const email = e.target.querySelector('input').value;
-           if (email && email.includes('@')) {
-               const button = e.target.querySelector('button');
-               const originalText = button.textContent;
-               button.textContent = 'Abonniert!';
-               button.style.background = '#2ecc71';
-               
-               setTimeout(() => {
-                   button.textContent = originalText;
-                   button.style.background = '#ff4444';
-                   e.target.querySelector('input').value = '';
-               }, 2000);
-           } else {
-               alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
-           }
-       });
-
-       // Enhanced animation on scroll
-       const observerOptions = {
-           threshold: 0.1,
-           rootMargin: '0px 0px -100px 0px'
-       };
-
-       const observer = new IntersectionObserver((entries) => {
-           entries.forEach(entry => {
-               if (entry.isIntersecting) {
-                   entry.target.classList.add('fade-in');
-               }
-           });
-       }, observerOptions);
-
-       // Observe all cards and sections
-       document.querySelectorAll('.mission-card, .team-card, .about-text, .about-image').forEach(el => {
-           observer.observe(el);
-       });
-
-       // Counter animation for stats
-       function animateCounters() {
-           const counters = document.querySelectorAll('.stat-item h3');
-           
-           counters.forEach(counter => {
-               const target = parseInt(counter.textContent.replace(/[^0-9]/g, ''));
-               const increment = target / 100;
-               let current = 0;
-               
-               const timer = setInterval(() => {
-                   current += increment;
-                   if (current >= target) {
-                       counter.textContent = counter.textContent.replace(/[0-9,]+/, target.toLocaleString());
-                       clearInterval(timer);
-                   } else {
-                       counter.textContent = counter.textContent.replace(/[0-9,]+/, Math.floor(current).toLocaleString());
-                   }
-               }, 20);
-           });
-       }
-
-       // Trigger counter animation when stats section is visible
-       const statsObserver = new IntersectionObserver((entries) => {
-           entries.forEach(entry => {
-               if (entry.isIntersecting) {
-                   animateCounters();
-                   statsObserver.unobserve(entry.target);
-               }
-           });
-       }, { threshold: 0.5 });
-
-       statsObserver.observe(document.querySelector('.stats-section'));
-
-       // Auto-hide mobile menu on resize
-       window.addEventListener('resize', () => {
-           if (window.innerWidth > 768) {
-               navMenu.classList.remove('show');
-               hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-           }
-       });
-
-       // Enhanced WhatsApp button interaction
-       const whatsappBtn = document.querySelector('.whatsapp-float');
-       whatsappBtn.addEventListener('mouseenter', () => {
-           whatsappBtn.style.transform = 'scale(1.1) rotate(10deg)';
-       });
-       
-       whatsappBtn.addEventListener('mouseleave', () => {
-           whatsappBtn.style.transform = 'scale(1) rotate(0deg)';
-       });
-
-       // Enhanced loading animation
-       window.addEventListener('load', () => {
-           document.body.style.opacity = '0';
-           document.body.style.transition = 'opacity 0.8s ease-in';
-           setTimeout(() => {
-               document.body.style.opacity = '1';
-           }, 100);
-       });
-
-       console.log('🎉 Über uns Seite erfolgreich geladen!');
-   </script>
+        window.addEventListener('load', () => { document.body.style.opacity = '1'; });
+        document.body.style.opacity = '0';
+        document.body.style.transition = 'opacity 0.8s ease-in';
+    </script>
 </body>
-
 </html>
-

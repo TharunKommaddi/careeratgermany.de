@@ -6,7 +6,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>C@G Recruiting - Beste deutsche Beratung in Kerala | Startseite</title>
 
-   <!-- Google Analytics -->
    <script async src="https://www.googletagmanager.com/gtag/js?id=G-CY7FEDRNVJ"></script>
    <script>
      window.dataLayer = window.dataLayer || [];
@@ -15,21 +14,19 @@
      gtag('config', 'G-CY7FEDRNVJ');
    </script>
 
-<!-- Add this AFTER your Google Analytics and BEFORE </head> -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-   emailjs.init("NYKqAOqEeoEy8j2F1"); // Your EmailJS public key
-</script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   <script type="text/javascript">
+      (function(){
+          emailjs.init("NYKqAOqEeoEy8j2F1"); 
+      })();
+   </script>
    
    <meta name="description"
        content="Expertenberatung für Gesundheitskarrieren in Deutschland. Pflegekarrieren, Medizinstudium, Visa-Unterstützung und Deutschkurse.">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
    <style>
-
-
-
 /* ========================================
-UNIVERSAL RESPONSIVE CSS - ADD TO ALL PAGES
+   UNIVERSAL RESPONSIVE CSS - ADD TO ALL PAGES
 ======================================== */
 
 /* Tablets (768px - 1024px) */
@@ -514,24 +511,6 @@ font-size: 1.5rem;
     }
 }
 
-/* Logo Image Styles - Add this to your existing CSS */
-
-/*
-
-.logo-img {
-width: 45px;
-height: 45px;
-object-fit: contain;
-transition: transform 0.3s ease;
-border-radius: 8px; 
-}
-
-.logo:hover .logo-img {
-transform: scale(1.1);
-}
-*/
-
-
 .logo-img { 
     height: 8mm; 
     transform: scale(0.9);
@@ -539,9 +518,6 @@ transform: scale(1.1);
     margin-left: -1mm; 
 }
 
-
-
-	   
 .logo:hover .logo-img {
 transform: scale(1);
 }
@@ -568,11 +544,6 @@ padding: 1rem 2rem;
 min-height: 80px; /* Fixed height */
 max-height: 80px; /* Prevent growth */
 }
-
-
-
-
-
 
        * {
            margin: 0;
@@ -1198,39 +1169,22 @@ max-height: 80px; /* Prevent growth */
        .floating {
            animation: floating 3s ease-in-out infinite;
        }
-
-
-
-
-
-
-
-
-
-
-
-	   
    </style>
 </head>
 
 <body>
-   <!-- Header -->
    <header class="header">
        <nav class="nav-container">
            <a href="index.html" class="logo">
-               <!-- <img src="Images/Logo1/erasebg-transformed (7).png" alt="C@G Recruiting Logo" class="logo-img"> C@G Recruiting -->
                <img src="Images/Logo1/erasebg-transformed (7).png" alt="C@G Recruiting Logo" class="logo-img">
-               <!-- <img src="Images/Photos/1280x1280-1.png" alt="C@G Recruiting Logo" class="logo-img"> -->
-               <!-- <span style="color: black;">Pflege</span> Career -->
-               <!-- <i class="fas fa-heartbeat"></i> C@G Recruiting -->
-
-           </a>
+               </a>
            <ul class="nav-menu">
                <li><a href="index.html" class="active">Startseite</a></li>
                <li><a href="about.html">Über uns</a></li>
                <li><a href="services.html">Dienstleistungen</a></li>
                <li><a href="programs.html">Programme</a></li>
                <li><a href="blog.html">Blog</a></li>
+               <li><a href="testimonials.html">Erfolgsgeschichten</a></li>
                <li><a href="contact.html">Kontakt</a></li>
            </ul>
            <div class="hamburger">
@@ -1242,7 +1196,6 @@ max-height: 80px; /* Prevent growth */
        </nav>
    </header>
 
-   <!-- Hero Section -->
    <section class="hero">
        <div class="hero-container">
            <div class="hero-content fade-in">
@@ -1274,7 +1227,6 @@ max-height: 80px; /* Prevent growth */
            <div class="hero-image">
 
 
-               <!-- <img src="Images/Photos/HelathCare.jpg" alt="Healthcare Professionals in Germany"> -->
                <img src="Images/Photos/1280x1280-2.png" alt="Gesundheitsfachkräfte in Deutschland">
                <div class="floating-labels">
                    <div class="floating-label floating">🇩🇪 AU Pair</div>
@@ -1286,7 +1238,6 @@ max-height: 80px; /* Prevent growth */
        </div>
    </section>
 
-   <!-- Services Section -->
    <section class="services">
        <div class="services-container">
            <p class="section-subtitle">Unsere Kerndienstleistungen</p>
@@ -1317,7 +1268,6 @@ max-height: 80px; /* Prevent growth */
        </div>
    </section>
 
-   <!-- Footer -->
    <footer class="footer">
        <div class="footer-container">
            <div class="footer-section">
@@ -1338,7 +1288,6 @@ max-height: 80px; /* Prevent growth */
                <p><strong>C@G Recruiting</strong></p>
                <p><i class="fas fa-map-marker-alt" style="color: #ff4444;"></i> Luther str. 24,<br>
                Chemnitz,<br> Deutschland - 09126</p>
-               <!--<p><i class="fas fa-phone" style="color: #25D366;"></i> +91 9074847617 (Indien)</p>-->
                <p><i class="fas fa-phone" style="color: #25D366;"></i> +49 157 3986 6872 (Deutschland)</p>
                <p><i class="fas fa-envelope" style="color: #3498db;"></i> jomy.joseph@careeratgermany.de</p>
            </div>
@@ -1349,35 +1298,28 @@ max-height: 80px; /* Prevent growth */
                <a href="services.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Unsere Dienstleistungen</a>
                <a href="programs.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Gesundheitsprogramme</a>
                <a href="blog.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Aktuelle Nachrichten</a>
+               <a href="testimonials.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Erfolgsgeschichten</a>
                <a href="contact.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Kontakt</a>
            </div>
            <div class="footer-section">
                <h3>📧 In Verbindung bleiben</h3>
                <p>Abonnieren Sie, um die neuesten Updates zu deutschen Gesundheitsmöglichkeiten, Anmeldefristen, Sprachkursplänen und exklusiven Karrieretipps direkt in Ihrem Postfach zu erhalten.</p>
-               <!-- <div class="newsletter-form">
-                   <input type="email" placeholder="Enter your email address..." required>
-                   <button type="submit">Subscribe</button>
-               </div> -->
-
                <div class="newsletter-form">
                    <input type="email" id="newsletter-email" placeholder="Geben Sie Ihre E-Mail-Adresse ein..." required>
-				   
-				   
-				   <button type="button" id="newsletter-btn" onclick="subscribeNewsletter()">Abonnieren</button>
+                   <button type="button" id="newsletter-btn" onclick="subscribeNewsletter()">Abonnieren</button>
                </div>
            </div>
        </div>
        <div class="footer-bottom">
            <p>© 2025 C@G Recruiting. Alle Rechte vorbehalten. | Gesundheitskarrieren in Deutschland stärken</p>
            <div style="display: flex; gap: 2rem;">
-               <a href="#">Datenschutzerklärung</a>
+               <a href="datenschutz.html">Datenschutzerklärung</a>
                <a href="#">Nutzungsbedingungen</a>
                <a href="#">Cookie-Richtlinie</a>
            </div>
        </div>
    </footer>
 
-   <!-- WhatsApp Floating Button -->
    <a href="https://wa.me/4915739866872?text=Hallo!%20Ich%20möchte%20mehr%20über%20Gesundheitskarrieren%20in%20Deutschland%20erfahren.%20Bitte%20geben%20Sie%20mir%20Informationen%20über%20Ihre%20Dienstleistungen."
        class="whatsapp-float" target="_blank" aria-label="Chat auf WhatsApp">
        <i class="fab fa-whatsapp"></i>
@@ -1553,7 +1495,6 @@ max-height: 80px; /* Prevent growth */
    console.log('🎉 C@G Recruiting Startseite erfolgreich geladen!');
    </script>
    
-   <!-- Newsletter Subscription Code -->
    <script>
        function subscribeNewsletter() {
            const emailInput = document.getElementById('newsletter-email');
@@ -1668,9 +1609,3 @@ max-height: 80px; /* Prevent growth */
    
 
    </html>
-
-
-
-
-
-

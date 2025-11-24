@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dienstleistungen - Beste deutsche Beratung in Kerala</title>
 
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CY7FEDRNVJ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -14,562 +13,17 @@
       gtag('js', new Date());
       gtag('config', 'G-CY7FEDRNVJ');
     </script>
-
-
     
-    <meta name="description"
-        content="Umfassende Gesundheitsberatung für Deutschland. Pflegekarrieren, Medizinstudium, Visa-Unterstützung, Sprachtraining und mehr.">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript"> (function(){ emailjs.init("NYKqAOqEeoEy8j2F1"); })(); </script>
+
+    <meta name="description" content="Umfassende Gesundheitsberatung für Deutschland. Pflegekarrieren, Medizinstudium, Visa-Unterstützung, Sprachtraining und mehr.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <style>
-
-
 /* ========================================
-UNIVERSAL RESPONSIVE CSS - ADD TO ALL PAGES
+   UNIVERSAL RESPONSIVE CSS & CORE STYLES
 ======================================== */
-
-/* Tablets (768px - 1024px) */
-@media (max-width: 1024px) {
-.hero-container,
-.about-container,
-.contact-container {
-gap: 3rem;
-}
-
-.hero-content h1,
-.page-title {
-font-size: 3rem;
-}
-
-.section-title {
-font-size: 2.2rem;
-}
-
-.nav-menu {
-gap: 1.5rem;
-}
-
-.nav-menu a {
-padding: 0.5rem 0.8rem;
-font-size: 0.95rem;
-}
-}
-
-/* Mobile Landscape & Small Tablets (481px - 768px) */
-@media (max-width: 768px) {
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-word-wrap: break-word;
-hyphens: auto;
-}
-
-/* Navigation */
-.hamburger {
-display: flex;
-}
-
-.nav-container {
-padding: 1rem;
-}
-
-.nav-menu {
-position: fixed;
-top: 80px;
-left: -100%;
-width: 100%;
-height: calc(100vh - 80px);
-background: white;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-transition: all 0.3s ease;
-padding-top: 2rem;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-gap: 0.5rem;
-z-index: 999;
-}
-
-.nav-menu.show {
-left: 0;
-}
-
-.nav-menu a {
-padding: 0.7rem 1rem;
-font-size: 1rem;
-width: 90%;
-text-align: center;
-}
-
-.call-btn {
-display: none;
-}
-
-/* Hero / Page Header */
-.hero,
-.page-header {
-padding: 100px 0 60px;
-min-height: auto;
-}
-
-.hero-container,
-.about-container,
-.contact-container,
-.featured-article {
-grid-template-columns: 1fr;
-gap: 2rem;
-text-align: center;
-padding: 0 1.5rem;
-}
-
-.hero-content h1,
-.page-title {
-font-size: 2.2rem;
-line-height: 1.3;
-}
-
-.hero-content p,
-.page-subtitle {
-font-size: 1.05rem;
-}
-
-.hero-buttons,
-.cta-buttons {
-justify-content: center;
-gap: 0.8rem;
-}
-
-.btn-primary,
-.btn-secondary,
-.service-btn,
-.program-btn,
-.article-btn,
-.read-more-btn {
-padding: 0.9rem 1.5rem;
-font-size: 0.95rem;
-}
-
-.customer-reviews {
-justify-content: center;
-font-size: 0.9rem;
-}
-
-.hero-image img {
-max-width: 400px;
-}
-
-.floating-label {
-display: none;
-}
-
-/* Grid Layouts */
-.services-grid,
-.programs-grid,
-.articles-grid,
-.features-grid,
-.process-steps,
-.team-grid,
-.success-grid,
-.hours-grid,
-.mission-grid,
-.stats-grid {
-grid-template-columns: 1fr;
-gap: 1.5rem;
-}
-
-/* Sections */
-.services,
-.programs-section,
-.articles-section,
-.features-section,
-.process-section,
-.mission-section,
-.team-section,
-.hours-section {
-padding: 60px 0;
-}
-
-.services-container,
-.programs-container,
-.articles-container,
-.features-container,
-.process-container,
-.mission-container,
-.team-container,
-.hours-container {
-padding: 0 1.5rem;
-}
-
-.section-title {
-font-size: 1.9rem;
-}
-
-/* Cards */
-.service-card,
-.program-card,
-.article-card,
-.feature-card,
-.mission-card,
-.team-card,
-.hours-card,
-.contact-item {
-padding: 2rem 1.5rem;
-}
-
-/* Process Steps */
-.process-step::after {
-display: none;
-}
-
-/* Forms */
-.contact-form-wrapper {
-padding: 2rem;
-}
-
-.form-row {
-grid-template-columns: 1fr;
-}
-
-/* Filter & Category Buttons */
-.filter-buttons,
-.category-filters {
-gap: 0.5rem;
-}
-
-.filter-btn,
-.category-btn {
-padding: 0.6rem 1rem;
-font-size: 0.9rem;
-}
-
-/* Map */
-.map-wrapper {
-padding: 2rem;
-}
-
-.map-placeholder {
-height: 300px;
-}
-
-/* Newsletter in CTA */
-.newsletter-section {
-padding: 60px 0;
-}
-
-.newsletter-form {
-flex-direction: column;
-gap: 0.8rem;
-}
-
-.newsletter-form input,
-.newsletter-form button {
-width: 100%;
-}
-
-/* Footer */
-.footer {
-padding: 40px 0 20px;
-}
-
-.footer-container {
-padding: 0 1.5rem;
-gap: 2rem;
-}
-
-.footer-section h3 {
-font-size: 1.2rem;
-}
-
-.footer-section p,
-.footer-section a {
-font-size: 0.95rem;
-line-height: 1.6;
-}
-
-.footer-bottom {
-text-align: center;
-flex-direction: column;
-gap: 1.5rem;
-}
-
-.footer-bottom > div {
-flex-direction: column;
-gap: 1rem !important;
-}
-
-/* WhatsApp Button */
-.whatsapp-float {
-bottom: 20px;
-right: 20px;
-width: 55px;
-height: 55px;
-font-size: 1.6rem;
-}
-}
-
-/* Mobile Portrait (320px - 480px) */
-@media (max-width: 480px) {
-/* Logo */
-.logo {
-font-size: 1.5rem;
-}
-
-.logo-img {
-height: 6mm;
-}
-
-/* Navigation */
-.nav-container {
-padding: 0.8rem 1rem;
-min-height: 70px;
-max-height: 70px;
-}
-
-.nav-menu {
-top: 70px;
-height: calc(100vh - 70px);
-}
-
-.nav-menu a {
-padding: 0.8rem 1rem;
-font-size: 0.95rem;
-}
-
-/* Hero / Page Header */
-.hero,
-.page-header {
-padding: 90px 0 50px;
-}
-
-.hero-container,
-.about-container,
-.contact-container {
-padding: 0 1rem;
-}
-
-.hero-content h1,
-.page-title {
-font-size: 1.8rem;
-}
-
-.section-subtitle {
-font-size: 0.95rem;
-}
-
-.hero-content p,
-.page-subtitle {
-font-size: 1rem;
-}
-
-.btn-primary,
-.btn-secondary,
-.service-btn,
-.program-btn,
-.article-btn,
-.read-more-btn,
-.submit-btn {
-padding: 0.8rem 1.3rem;
-font-size: 0.9rem;
-white-space: nowrap;
-}
-
-.customer-avatars img {
-width: 40px;
-height: 40px;
-}
-
-.customer-reviews {
-font-size: 0.85rem;
-}
-
-.hero-image img {
-max-width: 100%;
-}
-
-/* Section Titles */
-.section-title {
-font-size: 1.7rem;
-}
-
-/* Cards */
-.service-card,
-.program-card,
-.article-card,
-.feature-card,
-.mission-card,
-.team-card,
-.hours-card,
-.contact-item,
-.success-card,
-.faq-item {
-padding: 1.5rem 1rem;
-}
-
-.service-card h3,
-.program-card h3,
-.article-card h3 {
-font-size: 1.2rem;
-}
-
-.service-card p,
-.program-card p,
-.article-card p {
-font-size: 0.95rem;
-}
-
-.service-icon,
-.feature-icon {
-width: 70px;
-height: 70px;
-font-size: 1.8rem;
-}
-
-/* Stats */
-.stats-grid {
-grid-template-columns: repeat(2, 1fr);
-gap: 1rem;
-}
-
-.stat-item h3 {
-font-size: 2rem;
-}
-
-/* Forms */
-.contact-form-wrapper {
-padding: 1.5rem;
-}
-
-.form-group label {
-font-size: 0.95rem;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-padding: 0.8rem;
-font-size: 0.95rem;
-}
-
-/* Footer */
-.footer-section h3 {
-font-size: 1.1rem;
-}
-
-.footer-section p,
-.footer-section a {
-font-size: 0.9rem;
-}
-
-.footer-social a {
-width: 35px;
-height: 35px;
-font-size: 0.9rem;
-}
-
-/* WhatsApp Button */
-.whatsapp-float {
-bottom: 15px;
-right: 15px;
-width: 50px;
-height: 50px;
-font-size: 1.5rem;
-}
-}
-
-/* Extra Small Devices (< 320px) */ @media (max-width: 320px) { .hero-content h1, .page-title { font-size: 1.6rem; }
-    .section-title { font-size: 1.5rem; } .btn-primary, .btn-secondary, .service-btn, .program-btn { padding: 0.7rem
-    1.1rem; font-size: 0.85rem; } .service-card, .program-card, .contact-item { padding: 1.5rem 1rem; } }
-
-
-
-
-
-
-
-
-		/* ADD THIS TO YOUR C@G RECRUITING WEBSITE */
-@media (max-width: 768px) {
-    
-    /* Better text wrapping for German */
-    h1, h2, h3, h4, h5, h6 {
-        word-wrap: break-word;
-        hyphens: auto;
-        line-height: 1.3 !important;
-    }
-    
-    /* Navigation menu - make buttons smaller for German text */
-    .nav-menu a {
-        padding: 0.5rem 0.8rem !important;
-        font-size: 0.9rem !important;
-    }
-    
-    /* Button text wrapping */
-    .btn-primary, .btn-secondary {
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-    
-    /* Footer links - better spacing for German */
-    .footer-section a {
-        font-size: 0.9rem;
-        line-height: 1.4;
-    }
-}
-
-
-		
-
-    /* Logo Image Styles - Add this to your existing CSS */
-/*
-
-.logo-img {
-width: 45px;
-height: 45px;
-object-fit: contain;
-transition: transform 0.3s ease;
-border-radius: 8px; 
-}
-
-.logo:hover .logo-img {
-transform: scale(1.1);
-}
-*/
-
-
-.logo-img { 
-    height: 8mm; 
-    transform: scale(0.9);
-    transform-origin: left center;
-    margin-left: -1mm; 
-}
-.logo:hover .logo-img {
-transform: scale(1);
-}
-
-
-
-/* Update existing .logo styles */
-.logo {
-font-size: 1.8rem;
-font-weight: bold;
-color: #ff4444;
-text-decoration: none;
-display: flex;
-align-items: center;
-gap: 0rem; /* Reduced gap from 0.5rem to 0.3rem */
-}
-
-/* Fix navigation height - Add this to prevent nav from growing */
-.nav-container {
-max-width: 1200px;
-margin: 0 auto;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1rem 2rem;
-min-height: 80px; /* Fixed height */
-max-height: 80px; /* Prevent growth */
-}
-
 
         * {
             margin: 0;
@@ -604,6 +58,8 @@ max-height: 80px; /* Prevent growth */
             justify-content: space-between;
             align-items: center;
             padding: 1rem 2rem;
+            min-height: 80px;
+            max-height: 80px;
         }
 
         .logo {
@@ -613,7 +69,19 @@ max-height: 80px; /* Prevent growth */
             text-decoration: none;
             display: flex;
             align-items: center;
-            gap: 0.5rem;
+            gap: 0rem;
+        }
+
+        .logo-img { 
+            height: 8mm; 
+            transform: scale(0.9);
+            transform-origin: left center;
+            margin-left: -1mm; 
+            transition: transform 0.3s ease;
+        }
+        
+        .logo:hover .logo-img {
+            transform: scale(1);
         }
 
         .nav-menu {
@@ -769,29 +237,12 @@ max-height: 80px; /* Prevent growth */
             transition: all 0.3s ease;
         }
 
-        .service-card:nth-child(1) .service-icon {
-            background: linear-gradient(135deg, #ff4444, #e63946);
-        }
-
-        .service-card:nth-child(2) .service-icon {
-            background: linear-gradient(135deg, #10b981, #047857);
-        }
-
-        .service-card:nth-child(3) .service-icon {
-            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
-        }
-
-        .service-card:nth-child(4) .service-icon {
-            background: linear-gradient(135deg, #8b5cf6, #5b21b6);
-        }
-
-        .service-card:nth-child(5) .service-icon {
-            background: linear-gradient(135deg, #f59e0b, #d97706);
-        }
-
-        .service-card:nth-child(6) .service-icon {
-            background: linear-gradient(135deg, #ef4444, #dc2626);
-        }
+        .service-card:nth-child(1) .service-icon { background: linear-gradient(135deg, #ff4444, #e63946); }
+        .service-card:nth-child(2) .service-icon { background: linear-gradient(135deg, #10b981, #047857); }
+        .service-card:nth-child(3) .service-icon { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+        .service-card:nth-child(4) .service-icon { background: linear-gradient(135deg, #8b5cf6, #5b21b6); }
+        .service-card:nth-child(5) .service-icon { background: linear-gradient(135deg, #f59e0b, #d97706); }
+        .service-card:nth-child(6) .service-icon { background: linear-gradient(135deg, #ef4444, #dc2626); }
 
         .service-card h3 {
             font-size: 1.5rem;
@@ -890,21 +341,10 @@ max-height: 80px; /* Prevent growth */
             color: white;
         }
 
-        .feature-card:nth-child(1) .feature-icon {
-            background: linear-gradient(135deg, #ff6b6b, #ee5a52);
-        }
-
-        .feature-card:nth-child(2) .feature-icon {
-            background: linear-gradient(135deg, #4ecdc4, #44a08d);
-        }
-
-        .feature-card:nth-child(3) .feature-icon {
-            background: linear-gradient(135deg, #45b7d1, #3490dc);
-        }
-
-        .feature-card:nth-child(4) .feature-icon {
-            background: linear-gradient(135deg, #96ceb4, #7dc383);
-        }
+        .feature-card:nth-child(1) .feature-icon { background: linear-gradient(135deg, #ff6b6b, #ee5a52); }
+        .feature-card:nth-child(2) .feature-icon { background: linear-gradient(135deg, #4ecdc4, #44a08d); }
+        .feature-card:nth-child(3) .feature-icon { background: linear-gradient(135deg, #45b7d1, #3490dc); }
+        .feature-card:nth-child(4) .feature-icon { background: linear-gradient(135deg, #96ceb4, #7dc383); }
 
         .feature-card h3 {
             font-size: 1.3rem;
@@ -941,18 +381,8 @@ max-height: 80px; /* Prevent growth */
             position: relative;
         }
 
+        /* We hide the connecting line on mobile, or keep it simple */
         .process-step::after {
-            content: '';
-            position: absolute;
-            top: 50px;
-            right: -50%;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(90deg, #ff4444, transparent);
-            z-index: 1;
-        }
-
-        .process-step:last-child::after {
             display: none;
         }
 
@@ -1141,10 +571,6 @@ max-height: 80px; /* Prevent growth */
             background: #475569;
         }
 
-        .newsletter-form input::placeholder {
-            color: #94a3b8;
-        }
-
         .newsletter-form button {
             background: #ff4444;
             color: white;
@@ -1210,25 +636,14 @@ max-height: 80px; /* Prevent growth */
         }
 
         @keyframes pulse {
-            0% {
-                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
-            }
-
-            50% {
-                box-shadow: 0 8px 35px rgba(37, 211, 102, 0.5), 0 0 0 10px rgba(37, 211, 102, 0.1);
-            }
-
-            100% {
-                box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
-            }
+            0% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); }
+            50% { box-shadow: 0 8px 35px rgba(37, 211, 102, 0.5), 0 0 0 10px rgba(37, 211, 102, 0.1); }
+            100% { box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3); }
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-            }
-
+            .hamburger { display: flex; }
             .nav-menu {
                 position: fixed;
                 top: 80px;
@@ -1242,53 +657,22 @@ max-height: 80px; /* Prevent growth */
                 transition: all 0.3s ease;
                 padding-top: 2rem;
                 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                gap: 0.5rem;
             }
+            .nav-menu.show { left: 0; }
+            .call-btn { display: none; }
+            .page-title { font-size: 2rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .features-grid { grid-template-columns: 1fr; }
+            .process-steps { grid-template-columns: 1fr; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .footer-bottom { text-align: center; flex-direction: column; }
+            .newsletter-form { flex-direction: column; }
+        }
 
-            .nav-menu.show {
-                left: 0;
-            }
-
-            .call-btn {
-                display: none;
-            }
-
-            .page-title {
-                font-size: 2rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .process-steps {
-                grid-template-columns: 1fr;
-            }
-
-            .process-step::after {
-                display: none;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .footer-bottom {
-                text-align: center;
-                flex-direction: column;
-            }
-
-            .newsletter-form {
-                flex-direction: column;
-            }
+        @media (max-width: 1024px) {
+            .hero-content h1, .page-title { font-size: 3rem; }
+            .nav-menu { gap: 1.5rem; }
         }
 
         /* Animation Classes */
@@ -1299,24 +683,16 @@ max-height: 80px; /* Prevent growth */
         }
 
         @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 
 <body>
-    <!-- Header -->
     <header class="header">
         <nav class="nav-container">
             <a href="index.html" class="logo">
-                <!-- <i class="fas fa-heartbeat"></i> C@G Recruiting -->
-                <!-- <img src="Images/Logo1/erasebg-transformed (7).png" alt="C@G Recruiting Logo" class="logo-img"> C@G Recruiting -->
                 <img src="Images/Logo1/erasebg-transformed (7).png" alt="C@G Recruiting Logo" class="logo-img">
-                <!-- <span style="color: black;">Pflege</span> Career -->
-				
             </a>
             <ul class="nav-menu">
                 <li><a href="index.html">Startseite</a></li>
@@ -1324,6 +700,7 @@ max-height: 80px; /* Prevent growth */
                 <li><a href="services.html" class="active">Dienstleistungen</a></li>
                 <li><a href="programs.html">Programme</a></li>
                 <li><a href="blog.html">Blog</a></li>
+                <li><a href="testimonials.html">Erfolgsgeschichten</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
             <div class="hamburger">
@@ -1335,7 +712,6 @@ max-height: 80px; /* Prevent growth */
         </nav>
     </header>
 
-    <!-- Page Header -->
     <section class="page-header">
         <div class="page-header-container">
             <h1 class="page-title">Unsere <span class="highlight">Dienstleistungen</span></h1>
@@ -1343,15 +719,12 @@ max-height: 80px; /* Prevent growth */
         </div>
     </section>
 
-    <!-- Main Services Section -->
     <section class="services-section">
         <div class="services-container">
             <h2 class="section-title">Umfassende <span class="highlight">Gesundheitsdienstleistungen</span></h2>
             <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-user-nurse"></i>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-user-nurse"></i></div>
                     <h3>Pflegekarriere-Vermittlung</h3>
                     <p>Komplette Unterstützung für Pflegekarrieren einschließlich Jobvermittlung, Qualifikationsanerkennung und Krankenhaus-Partnerschaften in ganz Deutschland.</p>
                     <ul class="service-features">
@@ -1364,10 +737,8 @@ max-height: 80px; /* Prevent growth */
                     <a href="contact.html" class="service-btn">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-graduation-cap"></i></div>
                     <h3>Medizinstudium-Unterstützung</h3>
                     <p>Universitätszulassungsberatung, Bewerbungsunterstützung und komplette Hilfe für Medizinstudium an deutschen Universitäten.</p>
                     <ul class="service-features">
@@ -1380,10 +751,8 @@ max-height: 80px; /* Prevent growth */
                     <a href="contact.html" class="service-btn">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-passport"></i>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-passport"></i></div>
                     <h3>Visa & Einwanderungsunterstützung</h3>
                     <p>Komplette Visa-Hilfe, Dokumentationsunterstützung und Einwanderungsberatung für Gesundheitsfachkräfte, die nach Deutschland ziehen.</p>
                     <ul class="service-features">
@@ -1396,10 +765,8 @@ max-height: 80px; /* Prevent growth */
                     <a href="contact.html" class="service-btn">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-language"></i>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-language"></i></div>
                     <h3>Deutschsprachtraining</h3>
                     <p>Intensive Deutschkurse speziell für Gesundheitsfachkräfte mit Fokus auf medizinische Terminologie.</p>
                     <ul class="service-features">
@@ -1412,10 +779,8 @@ max-height: 80px; /* Prevent growth */
                     <a href="contact.html" class="service-btn">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
                 </div>
 
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon"><i class="fas fa-certificate"></i></div>
                     <h3>Qualifikationsanerkennung</h3>
                     <p>Professionelle Hilfe bei Qualifikationsanerkennungsverfahren und Qualifikationsbewertung für das deutsche Gesundheitssystem.</p>
                     <ul class="service-features">
@@ -1428,10 +793,8 @@ max-height: 80px; /* Prevent growth */
                    <a href="contact.html" class="service-btn">Mehr erfahren <i class="fas fa-arrow-right"></i></a>
                </div>
 
-               <div class="service-card">
-                   <div class="service-icon">
-                       <i class="fas fa-hands-helping"></i>
-                   </div>
+               <div class="service-card fade-in">
+                   <div class="service-icon"><i class="fas fa-hands-helping"></i></div>
                    <h3>Ansiedlung & Integration</h3>
                    <p>Komplette Unterstützung bei der Ansiedlung in Deutschland einschließlich Unterkunft, kultureller Orientierung und kontinuierlicher Betreuung.</p>
                    <ul class="service-features">
@@ -1447,36 +810,27 @@ max-height: 80px; /* Prevent growth */
        </div>
    </section>
 
-   <!-- Features Section -->
    <section class="features-section">
        <div class="features-container">
            <h2 class="section-title">Warum unsere <span class="highlight">Dienstleistungen</span> wählen</h2>
            <div class="features-grid">
-               <div class="feature-card">
-                   <div class="feature-icon">
-                       <i class="fas fa-award"></i>
-                   </div>
+               <div class="feature-card fade-in">
+                   <div class="feature-icon"><i class="fas fa-award"></i></div>
                    <h3>Expertenberatung</h3>
                    <p>Professionelle Berater mit umfangreicher Erfahrung im deutschen Gesundheitssystem und Einwanderungsverfahren.</p>
                </div>
-               <div class="feature-card">
-                   <div class="feature-icon">
-                       <i class="fas fa-check"></i>
-                   </div>
+               <div class="feature-card fade-in">
+                   <div class="feature-icon"><i class="fas fa-check"></i></div>
                    <h3>Garantierter Erfolg</h3>
                    <p>95% Erfolgsquote mit umfassender Unterstützung, die erfolgreiche Vermittlung und Karriereförderung gewährleistet.</p>
                </div>
-               <div class="feature-card">
-                   <div class="feature-icon">
-                       <i class="fas fa-clock"></i>
-                   </div>
+               <div class="feature-card fade-in">
+                   <div class="feature-icon"><i class="fas fa-clock"></i></div>
                    <h3>24/7 Support</h3>
                    <p>Rund-um-die-Uhr Betreuung und Unterstützung während Ihrer gesamten Reise nach Deutschland.</p>
                </div>
-               <div class="feature-card">
-                   <div class="feature-icon">
-                       <i class="fas fa-handshake"></i>
-                   </div>
+               <div class="feature-card fade-in">
+                   <div class="feature-icon"><i class="fas fa-handshake"></i></div>
                    <h3>Partner-Netzwerk</h3>
                    <p>Etablierte Partnerschaften mit führenden deutschen Krankenhäusern, Universitäten und Gesundheitseinrichtungen.</p>
                </div>
@@ -1484,94 +838,46 @@ max-height: 80px; /* Prevent growth */
        </div>
    </section>
 
-   <!-- Process Section -->
-   <!--
-   <section class="process-section">
-       <div class="process-container">
-           <h2 class="section-title">Our <span class="highlight">Process</span></h2>
-           <div class="process-steps">
-               <div class="process-step">
-                   <div class="step-number">1</div>
-                   <h3>Initial Consultation</h3>
-                   <p>Free consultation to understand your goals, qualifications, and career aspirations in German
-                       healthcare.</p>
-               </div>
-               <div class="process-step">
-                   <div class="step-number">2</div>
-                   <h3>Assessment & Planning</h3>
-                   <p>Comprehensive assessment of your qualifications and development of personalized career strategy.
-                   </p>
-               </div>
-               <div class="process-step">
-                   <div class="step-number">3</div>
-                   <h3>Preparation Phase</h3>
-                   <p>Language training, document preparation, and qualification recognition support as needed.</p>
-               </div>
-               <div class="process-step">
-                   <div class="step-number">4</div>
-                   <h3>Application & Placement</h3>
-                   <p>Job applications, university admissions, or training program applications with ongoing support.
-                   </p>
-               </div>
-               <div class="process-step">
-                   <div class="step-number">5</div>
-                   <h3>Visa & Immigration</h3>
-                   <p>Complete visa application support and immigration guidance for smooth transition to Germany.</p>
-               </div>
-               <div class="process-step">
-                   <div class="step-number">6</div>
-                   <h3>Settlement Support</h3>
-                   <p>Ongoing assistance with settling in Germany and integration into the German healthcare system.
-                   </p>
-               </div>
-           </div>
-       </div>
-   </section>
-   
-   -->
-   
-   
-   <!-- Process Section -->
    <section class="process-section">
    	<div class="process-container">
    		<h2 class="section-title">Unser <span class="highlight">Prozessablauf</span></h2>
    		<div class="process-steps">
-   			<div class="process-step">
+   			<div class="process-step fade-in">
    				<div class="step-number">1</div>
    				<h3>Erstberatung</h3>
    				<p>Wir führen Sie bei der Auswahl des besten und am besten geeigneten Programms für Ihr Profil durch eine personalisierte Beratung und stellen sicher, dass Ihre Karriereziele mit der richtigen deutschen Gelegenheit übereinstimmen.</p>
    			</div>
-   			<div class="process-step">
+   			<div class="process-step fade-in">
    				<div class="step-number">2</div>
    				<h3>Registrierung bei C@G Recruiting</h3>
    				<p>Registrieren Sie sich offiziell bei C@G Recruiting, um Ihre Reise zu beginnen. Dieser Schritt sichert Ihnen Ihren Platz in unserem System und ermöglicht es uns, Ihnen engagierte Unterstützung zu bieten.</p>
    			</div>
-   			<div class="process-step">
+   			<div class="process-step fade-in">
    				<div class="step-number">3</div>
    				<h3>Vorbereitung der Bewerbungsunterlagen</h3>
    				<p>Unser Team bereitet alle erforderlichen Dokumente für Ihre Bewerbungen bei Institutionen vor und gewährleistet Genauigkeit und Konformität mit deutschen Standards.</p>
    			</div>
-   			<div class="process-step">
+   			<div class="process-step fade-in">
    				<div class="step-number">4</div>
    				<h3>Vorstellungsgesprächsvorbereitung</h3>
    				<p>Wir beginnen rechtzeitig mit dem Vorstellungsgesprächscoaching und statten Sie mit den Fähigkeiten und dem Selbstvertrauen aus, die für den Erfolg bei Vorstellungsgesprächen mit deutschen Institutionen erforderlich sind.</p>
    			</div>
-   			<div class="process-step">
+   			<div class="process-step fade-in">
    				<div class="step-number">5</div>
    				<h3>Bewerbungsphase</h3>
    				<p>Wir reichen Ihr vollständiges Profil und Ihre Bewerbungen bei potenziellen Institutionen ein und maximieren Ihre Auswahlchancen.</p>
    			</div>
-   			<div class="process-step">
+   			<div class="process-step fade-in">
    				<div class="step-number">6</div>
    				<h3>Vertragsannahme</h3>
    				<p>Nach einem erfolgreichen Vorstellungsgespräch erhalten Sie ein Vertragsangebot von der Institution. Wir unterstützen Sie bei der Prüfung und Annahme des Vertrags.</p>
    			</div>
-   			<div class="process-step">
+   			<div class="process-step fade-in">
    				<div class="step-number">7</div>
    				<h3>Visa-Bearbeitung</h3>
    				<p>Sie erhalten zwei Sätze von Visa-Dokumenten von uns, und wir führen Sie durch den gesamten Visa-Termin und Antragsverfahren für einen reibungslosen Übergang.</p>
    			</div>
-   			<div class="process-step">
+   			<div class="process-step fade-in">
    				<div class="step-number">8</div>
    				<h3>Unterstützung nach der Ankunft</h3>
    				<p>Bei Ihrer Ankunft in Deutschland bieten wir umfassende Unterstützung einschließlich Unterkunftsarrangements und Hilfe bei allen notwendigen Formalitäten, um Ihnen eine komfortable Eingewöhnung zu ermöglichen.</p>
@@ -1579,11 +885,7 @@ max-height: 80px; /* Prevent growth */
    		</div>
    	</div>
    </section>
-   
-   
-   
 
-   <!-- CTA Section -->
    <section class="cta-section">
        <div class="cta-container">
            <div class="cta-content">
@@ -1597,20 +899,16 @@ max-height: 80px; /* Prevent growth */
        </div>
    </section>
 
-   <!-- Footer -->
    <footer class="footer">
        <div class="footer-container">
            <div class="footer-section">
                <h3>Über C@G Recruiting</h3>
                <p>C@G Recruiting ist eine führende Gesundheitsberatung, die sich auf deutsche Karrieremöglichkeiten spezialisiert hat. Wir bieten umfassende Unterstützung für Pflegefachkräfte, Medizinstudenten und Gesundheitsmitarbeiter, die erfolgreiche Karrieren in Deutschlands erstklassigem Gesundheitssystem aufbauen möchten.</p>
                <div class="footer-social">
-                   <a href="https://www.facebook.com/profile.php?id=61577329532504"
-                       class="facebook"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://www.facebook.com/profile.php?id=61577329532504" class="facebook"><i class="fab fa-facebook-f"></i></a>
                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
-                   <a href="https://www.linkedin.com/in/pflegecareer/"
-                       class="linkedin"><i class="fab fa-linkedin-in"></i></a>
-                   <a href="https://www.instagram.com/pflegecareer?igsh=MXcwc295bGM0bnFpNA=="
-                       class="instagram"><i class="fab fa-instagram"></i></a>
+                   <a href="https://www.linkedin.com/in/pflegecareer/" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="https://www.instagram.com/pflegecareer?igsh=MXcwc295bGM0bnFpNA==" class="instagram"><i class="fab fa-instagram"></i></a>
                </div>
            </div>
            <div class="footer-section">
@@ -1618,7 +916,6 @@ max-height: 80px; /* Prevent growth */
                <p><strong>C@G Recruiting</strong></p>
                <p><i class="fas fa-map-marker-alt" style="color: #ff4444;"></i> Luther str. 24,<br>
             Chemnitz, <br> Deutschland - 09126</p>
-               <!-- <p><i class="fas fa-phone" style="color: #25D366;"></i> +91 9074847617 (Indien)</p> -->
                <p><i class="fas fa-phone" style="color: #25D366;"></i> +49 157 3986 6872 (Deutschland)</p>
                <p><i class="fas fa-envelope" style="color: #3498db;"></i> jomy.joseph@careeratgermany.de</p>
            </div>
@@ -1626,38 +923,37 @@ max-height: 80px; /* Prevent growth */
                <h3>🔗 Schnelllinks</h3>
                <a href="index.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Startseite</a>
                <a href="about.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Über uns</a>
-               <a href="services.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Unsere Dienstleistungen</a>
-               <a href="programs.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Gesundheitsprogramme</a>
-               <a href="blog.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Aktuelle Nachrichten</a>
+               <a href="services.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Dienstleistungen</a>
+               <a href="programs.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Programme</a>
+               <a href="blog.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Blog</a>
+               <a href="testimonials.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Erfolgsgeschichten</a>
                <a href="contact.html"><i class="fas fa-chevron-right" style="color: #ff4444;"></i> Kontakt</a>
            </div>
            <div class="footer-section">
-               <h3>📧 In Verbindung bleiben</h3>
-               <p>Abonnieren Sie, um die neuesten Updates zu deutschen Gesundheitsmöglichkeiten, Anmeldefristen, Sprachkursplänen und exklusiven Karrieretipps direkt in Ihrem Postfach zu erhalten.</p>
+               <h3>📧 Newsletter</h3>
                <div class="newsletter-form">
-                   <input type="email" placeholder="Geben Sie Ihre E-Mail-Adresse ein..." required>
-                   <button type="submit">Abonnieren</button>
+                   <input type="email" placeholder="E-Mail-Adresse..." required>
+                   <button type="button">Abo</button>
                </div>
            </div>
        </div>
        <div class="footer-bottom">
-           <p>© 2025 C@G Recruiting. Alle Rechte vorbehalten. | Gesundheitskarrieren in Deutschland stärken</p>
+           <p>© 2025 C@G Recruiting. Alle Rechte vorbehalten.</p>
            <div style="display: flex; gap: 2rem;">
-               <a href="#">Datenschutzerklärung</a>
+               <a href="datenschutz.html">Datenschutzerklärung</a>
                <a href="#">Nutzungsbedingungen</a>
-               <a href="#">Cookie-Richtlinie</a>
+               <a href="#">Impressum</a>
            </div>
        </div>
    </footer>
 
-   <!-- WhatsApp Floating Button -->
-   <a href="https://wa.me/4915739866872?text=Hallo!%20Ich%20möchte%20mehr%20über%20Gesundheitskarrieren%20in%20Deutschland%20erfahren.%20Bitte%20geben%20Sie%20mir%20Informationen%20über%20Ihre%20Dienstleistungen."
+   <a href="https://wa.me/4915739866872?text=Hallo!%20Ich%20möchte%20mehr%20über%20Gesundheitskarrieren%20in%20Deutschland%20erfahren."
        class="whatsapp-float" target="_blank" aria-label="Chat auf WhatsApp">
        <i class="fab fa-whatsapp"></i>
    </a>
 
    <script>
-       // Enhanced mobile menu toggle
+       // Mobile menu toggle
        const hamburger = document.querySelector('.hamburger');
        const navMenu = document.querySelector('.nav-menu');
 
@@ -1667,7 +963,6 @@ max-height: 80px; /* Prevent growth */
                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
        });
 
-       // Close mobile menu when clicking on a link
        document.querySelectorAll('.nav-menu a').forEach(link => {
            link.addEventListener('click', () => {
                navMenu.classList.remove('show');
@@ -1675,7 +970,7 @@ max-height: 80px; /* Prevent growth */
            });
        });
 
-       // Enhanced header background on scroll
+       // Header background on scroll
        window.addEventListener('scroll', () => {
            const header = document.querySelector('.header');
            if (window.scrollY > 100) {
@@ -1687,28 +982,14 @@ max-height: 80px; /* Prevent growth */
            }
        });
 
-       // Enhanced newsletter form submission
+       // Newsletter form
        const newsletterForm = document.querySelector('.newsletter-form');
        newsletterForm.addEventListener('submit', (e) => {
            e.preventDefault();
-           const email = e.target.querySelector('input').value;
-           if (email && email.includes('@')) {
-               const button = e.target.querySelector('button');
-               const originalText = button.textContent;
-               button.textContent = 'Abonniert!';
-               button.style.background = '#2ecc71';
-               
-               setTimeout(() => {
-                   button.textContent = originalText;
-                   button.style.background = '#ff4444';
-                   e.target.querySelector('input').value = '';
-               }, 2000);
-           } else {
-               alert('Bitte geben Sie eine gültige E-Mail-Adresse ein.');
-           }
+           alert('Danke für Ihre Anmeldung!');
        });
 
-       // Enhanced animation on scroll
+       // Animation on scroll
        const observerOptions = {
            threshold: 0.1,
            rootMargin: '0px 0px -100px 0px'
@@ -1722,15 +1003,13 @@ max-height: 80px; /* Prevent growth */
            });
        }, observerOptions);
 
-       // Observe all cards and sections
        document.querySelectorAll('.service-card, .feature-card, .process-step').forEach(el => {
            observer.observe(el);
        });
 
-       // Enhanced button click effects
+       // Button Ripple
        document.querySelectorAll('.service-btn, .btn-primary, .btn-secondary').forEach(btn => {
            btn.addEventListener('click', function(e) {
-               // Create ripple effect
                const ripple = document.createElement('span');
                const rect = this.getBoundingClientRect();
                const size = Math.max(rect.width, rect.height);
@@ -1751,61 +1030,25 @@ max-height: 80px; /* Prevent growth */
                this.style.overflow = 'hidden';
                this.appendChild(ripple);
                
-               setTimeout(() => {
-                   ripple.remove();
-               }, 600);
-               
-               // Scale effect
+               setTimeout(() => { ripple.remove(); }, 600);
                this.style.transform = 'scale(0.98)';
-               setTimeout(() => {
-                   this.style.transform = '';
-               }, 150);
+               setTimeout(() => { this.style.transform = ''; }, 150);
            });
        });
 
-       // Add ripple animation CSS
+       // Ripple animation CSS
        const style = document.createElement('style');
        style.textContent = `
-           @keyframes ripple {
-               to {
-                   transform: scale(4);
-                   opacity: 0;
-               }
-           }
+           @keyframes ripple { to { transform: scale(4); opacity: 0; } }
        `;
        document.head.appendChild(style);
 
-       // Auto-hide mobile menu on resize
-       window.addEventListener('resize', () => {
-           if (window.innerWidth > 768) {
-               navMenu.classList.remove('show');
-               hamburger.innerHTML = '<i class="fas fa-bars"></i>';
-           }
-       });
-
-       // Enhanced WhatsApp button interaction
-       const whatsappBtn = document.querySelector('.whatsapp-float');
-       whatsappBtn.addEventListener('mouseenter', () => {
-           whatsappBtn.style.transform = 'scale(1.1) rotate(10deg)';
-       });
-       
-       whatsappBtn.addEventListener('mouseleave', () => {
-           whatsappBtn.style.transform = 'scale(1) rotate(0deg)';
-       });
-
-       // Enhanced loading animation
+       // Loading animation
        window.addEventListener('load', () => {
            document.body.style.opacity = '0';
            document.body.style.transition = 'opacity 0.8s ease-in';
-           setTimeout(() => {
-               document.body.style.opacity = '1';
-           }, 100);
+           setTimeout(() => { document.body.style.opacity = '1'; }, 100);
        });
-
-       console.log('🎉 Dienstleistungen Seite erfolgreich geladen!');
    </script>
 </body>
-
-
 </html>
-
